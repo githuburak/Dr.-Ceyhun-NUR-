@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. Ceyhun NURİ | Bütüncül Tıp & Sağlıklı Yaşam</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ÜST İLETİŞİM ÇUBUĞU (TOPBAR) -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <div class="contact-quick">
+        <span>📍 Mustafa Kemal Mah. Çankaya / ANKARA</span>
+        <span>📞 +90 543 164 32 64</span>
+        <span>✉️ info@doktorsitesi.com</span>
+      </div>
+      <div class="social-links">
+        <a href="https://www.instagram.com/drceyhunnuri/" target="_blank">Instagram</a>
+        <a href="https://www.youtube.com/@DrCeyhunNuri" target="_blank">YouTube</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ANA NAVİGASYON (HEADER) -->
+  <header class="main-header">
+    <div class="container nav-container">
+      
+      <!-- LOGO ALANI -->
+      <a href="index.html" class="logo-wrapper">
+        <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Menüyü Aç/Kapat">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <img src="images/logo.png" alt="Dr. Ceyhun Nuri Logo" class="brand-logo" onerror="this.style.display='none'">
+        <div class="logo-text">
+          <span class="doctor-title">DR. Ceyhun NURİ</span>
+          <span class="sub-title">BÜTÜNCÜL TIP & SAĞLIKLI YAŞAM</span>
+        </div>
+      </a>
+
+      <!-- AÇILIR MENÜLER (DROPDOWN NAV) -->
+      <nav class="nav-links">
+        <div class="nav-item"><a href="index.html" class="nav-link active">Ana Sayfa</a></div>
+        <div class="nav-item"><a href="#hakkimizda" class="nav-link">Hakkımızda</a></div>
+
+        <!-- #Hastalıklar Dropdown -->
+        <div class="nav-item dropdown">
+          <a href="#hastaliklar" class="nav-link">#Hastalıklar <span class="arrow">▾</span></a>
+          <div class="dropdown-menu">
+            <a href="#">Ankilozan Spondilit</a>
+            <a href="#">Romatoid Artrit</a>
+            <a href="#">Fibromiyalji</a>
+            <a href="#">Bel Ağrısı</a>
+            <a href="#">Boyun Ağrısı</a>
+            <a href="#">Diyabet</a>
+          </div>
+        </div>
+
+        <!-- #Beslenme ve Fitoterapi Dropdown -->
+        <div class="nav-item dropdown">
+          <a href="#beslenme" class="nav-link">#Beslenme ve Fitoterapi <span class="arrow">▾</span></a>
+          <div class="dropdown-menu">
+            <a href="#">Fitoterapi Videoları</a>
+            <a href="#">Beslenme Kürleri</a>
+          </div>
+        </div>
+
+        <div class="nav-item"><a href="#tedaviler" class="nav-link">Tedaviler</a></div>
+
+        <!-- Osteopati ve Uygulamalar Dropdown -->
+        <div class="nav-item dropdown">
+          <a href="#osteopati" class="nav-link">Osteopati ve Uygulamalar <span class="arrow">▾</span></a>
+          <div class="dropdown-menu">
+            <a href="#">Mekanik Videolar</a>
+            <a href="#">Kendi Kendinizi Tedavi Edin</a>
+          </div>
+        </div>
+
+        <!-- Genel Sağlık Dropdown -->
+        <div class="nav-item dropdown">
+          <a href="#genel-saglik" class="nav-link">Genel Sağlık <span class="arrow">▾</span></a>
+          <div class="dropdown-menu">
+            <a href="#">Sağlıklı Yaşam</a>
+            <a href="#">Estetik ve Güzellik</a>
+            <a href="#">Anti-aging</a>
+          </div>
+        </div>
+
+        <div class="nav-item"><a href="#yazilar" class="nav-link">Yazılar</a></div>
+        <div class="nav-item"><a href="#iletisim" class="nav-link">İletişim</a></div>
+      </nav>
+
+      <!-- SAĞ BUTON & ARAMA -->
+      <div style="display: flex; align-items: center; gap: 10px;">
+        <a href="#randevu" class="btn-appointment">Randevu Al</a>
+        <buttonclass="search-trigger-btn" id="searchOpenBtn" onclick="openSearchModal()" aria-label="Sitede Ara">
+  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="pointer-events: none;">
+    <circle cx="11" cy="11" r="8"></circle>
+    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+  </svg>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- HERO (GİRİŞ) ALANI -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <div class="badge-wrap">
+          <span class="badge">🌿 BÜTÜNCÜL SAĞLIK YAKLAŞIMI</span>
+        </div>
+        <h1>Sağlığınıza Bütüncül ve Kalıcı Çözüm</h1>
+        <p>Hastalıkların semptomlarını baskılamak yerine vücudun biyolojik dengesini kök nedenleriyle yeniden kuran kişiye özel, bilimsel ve fonksiyonel tedavi protokolleri.</p>
+        <div class="hero-actions">
+          <a href="#randevu" class="btn-primary">Online Randevu Talebi</a>
+          <a href="#tedaviler" class="btn-outline">Tedavi Alanları</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="img-frame">
+          <img src="images/doktor.jpg" alt="Dr. Ceyhun NURİ Portresi">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HAKKIMIZDA BÖLÜMÜ -->
+  <section id="hakkimizda" class="about-section">
+    <div class="container">
+      <div class="about-header-grid">
+        <div class="about-title-box">
+          <span class="sub-heading">BÜTÜNCÜL HEKİMLİK VİZYONU</span>
+          <h2>Dr. Ceyhun NURİ Sağlık Kliniği</h2>
+          <p class="about-intro">
+            Dr. Ceyhun Nuri Sağlık Kurumunda hastaya yaklaşım teşhis ve tedavi olmak üzere iki temel bölümden oluşmaktadır.
+          </p>
+        </div>
+        <div class="about-stats">
+          <div class="stat-item">
+            <h4>15<span>+</span></h4>
+            <p>Yıllık Klinik Tecrübe</p>
+          </div>
+          <div class="stat-item">
+            <h4>3000<span>+</span></h4>
+            <p>Danışan & Hasta Takibi</p>
+          </div>
+          <div class="stat-item">
+            <h4>100<span>+</span></h4>
+            <p>Bilimsel Video & Makale</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="approach-wrapper">
+        <!-- Bölüm 1: Teşhis Aşaması -->
+        <div class="approach-card">
+          <div class="card-badge">BÖLÜM 1</div>
+          <h3>Teşhis ve Beden Göstergeleri</h3>
+          <p>Teşhis aşaması, öncelikle bildiğiniz şekliyle mutlaka kişinin laboratuvar ve görüntüleme tetkiklerinin değerlendirmesiyle başlar. Bundan sonraki aşamada öncelikle beden belirtilerini tanımamıza yardım edecek iki ana teşhis-tespit yoluna başvurulmaktadır:</p>
+          
+          <div class="step-box">
+            <div class="step-num">1</div>
+            <div>
+              <strong>Kas-İskelet ve Biyomekanik Analiz:</strong>
+              <p>Kas iskelet sisteminin iç organlar üzerine veya aksi yönde etkisini tespit edebilmek için postür analizi, ayak bası analizi, omurga-kalçanın biyomekaniği osteopati anlayışı çerçevesinde değerlendirilir.</p>
+            </div>
+          </div>
+
+          <div class="step-box">
+            <div class="step-num">2</div>
+            <div>
+              <strong>Metabolik ve Mikrosistem Analizi:</strong>
+              <p>Organların metabolik durumları hakkında bilgi edinmek için, vücut pH ölçümü, kulak mikrosistem tarama, dil üzerinden teşhis, meridyen-enerji kanal taraması (check up) ve en önemlisi <em>Osteopat Hekim</em> anlayışı içerisinde fiziksel değerlendirme yapılır.</p>
+            </div>
+          </div>
+
+          <div class="highlight-quote">
+            Ancak bu şekilde nedenini açıklayamadığınız kronik hastalığınızın altyapısı isabetli ve güçlü bir teşhisle ortaya konur. Kullandığımız bu teknoloji ve yöntemler; vücut mikrosistemlerini, ısısını, enerjisini ve biyomekaniğini kullanarak henüz kan ve diğer laboratuvar tetkiklerine yansımayan vakaların dahi tespit edilmesinde çok ciddi bir olanak sağlamaktadır.
+          </div>
+
+          <p class="summary-note">Her biri alanında tecrübe sahibi ekibimizle birlikte tedavi planlaması yaparken; kadimden gelen bilgiler ve güncel tıp anlayışı içinde hastaya özel reçete hazırlanmasını esas hedef olarak görürüz.</p>
+        </div>
+
+        <!-- Bölüm 2: Tedavi Alanı -->
+        <div class="approach-card treatment-card">
+          <div class="card-badge">BÖLÜM 2</div>
+          <h3>Tedavi Alanı ve Enstrümanlar</h3>
+          <p>Kliniğin ikinci bölümü tedavi alanından oluşmaktadır. Bu alanda, hastaya özgü ana tedavi protokolüne destek olarak bütüncül tıp enstrümanları uygulanmaktadır:</p>
+
+          <div class="treatment-tags">
+            <span>Manuel Terapi</span>
+            <span>Osteopati</span>
+            <span>Kayropraksi</span>
+            <span>Fitoterapi</span>
+            <span>Akupunktur & Akupressür</span>
+            <span>Robotik Lazer</span>
+            <span>Elektrostimülasyon</span>
+            <span>Çin Manipülasyonu</span>
+            <span>Medikal Ozon</span>
+            <span>Mezoterapi</span>
+            <span>PRP</span>
+            <span>Proloterapi</span>
+            <span>Magneto Terapi</span>
+            <span>Kuru İğneleme</span>
+            <span>Hacamat</span>
+            <span>Hirudoterapi (Sülük)</span>
+            <span>Kuru Kupa</span>
+            <span>I.V. Destekler (Mineral / İz Element)</span>
+          </div>
+
+          <div class="warning-box">
+            <h4>ANCAK UNUTULMAMALIDIR Kİ;</h4>
+            <p>Bütün bu uygulamalar tekil olarak hastalarda istenen sonucu doğurmayabilir. Çünkü bunlar tek başına birer <strong>enstrümandır / alettir</strong>. Başarıyı yakalayan; hastanın kök nedenine göre bunlardan <em>doğru sentez ve kombinasyonları</em> oluşturan <strong>HEKİMLİK BİLİNCİDİR</strong>.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HASTALIKLAR & KÖK NEDEN ODAKLI ÇÖZÜMLER BÖLÜMÜ -->
+  <section id="hastaliklar" class="diseases-section">
+    <div class="container">
+      <div class="section-badge-center">
+        <span class="badge">UZMANLIK ALANLARI</span>
+        <h2>Semptomları Değil, Kök Nedeni İyileştiriyoruz</h2>
+        <p class="section-sub">Kronik ağrı ve inflamasyon süreçlerinde hücresel ve biyomekanik temelli tedavi yaklaşımı.</p>
+      </div>
+
+      <div class="diseases-grid">
+        <div class="disease-card">
+          <div class="d-icon">🦴</div>
+          <h3>Ankilozan Spondilit</h3>
+          <p>Omurga sertliği ve sabah tutukluklarında; bağırsak geçirgenliği, mikrobiyota düzenlemesi ve osteopatik postür desteği.</p>
+          <a href="#randevu" class="d-link">Tedavi Protokolünü İncele →</a>
+        </div>
+
+        <div class="disease-card">
+          <div class="d-icon">🖐️</div>
+          <h3>Romatoid Artrit</h3>
+          <p>Eklem iltihaplarını baskılamak yerine immün toleransı yeniden kazandıran fitoterapi ve hücresel detoks yaklaşımları.</p>
+          <a href="#randevu" class="d-link">Tedavi Protokolünü İncele →</a>
+        </div>
+
+        <div class="disease-card">
+          <div class="d-icon">⚡</div>
+          <h3>Fibromiyalji & Kronik Yorgunluk</h3>
+          <p>Mitokondriyal enerji düşüklüğü, uyku kalitesi ve kronik yaygın kas ağrılarına bütüncül mikrosistem müdahalesi.</p>
+          <a href="#randevu" class="d-link">Tedavi Protokolünü İncele →</a>
+        </div>
+
+        <div class="disease-card">
+          <div class="d-icon">🩺</div>
+          <h3>Bel & Boyun Fıtığı / Ağrıları</h3>
+          <p>Fıtık ve kireçlenmelerde omurga biyomekaniğini düzelten kayropraksi, osteopati ve hedefe yönelik kuru iğneleme.</p>
+          <a href="#randevu" class="d-link">Tedavi Protokolünü İncele →</a>
+        </div>
+
+        <div class="disease-card">
+          <div class="d-icon">🔬</div>
+          <h3>Diyabet & İnsülin Direnci</h3>
+          <p>Kişiye özel beslenme kürleri, pH dengesi ve doku yenilenmesini destekleyen damar içi (I.V.) protokoller.</p>
+          <a href="#randevu" class="d-link">Tedavi Protokolünü İncele →</a>
+        </div>
+
+        <div class="disease-card">
+          <div class="d-icon">🌿</div>
+          <h3>Geçirgen Bağırsak & SIBO</h3>
+          <p>Bağışıklığın %70'ini yöneten bağırsak florasını onararak tüm otoimmün tetikleyicileri kaynağında durdurma.</p>
+          <a href="#randevu" class="d-link">Tedavi Protokolünü İncele →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEDAVİLER & KLİNİK ENSTRÜMANLAR VİTRİNİ -->
+  <section id="tedaviler" class="treatments-section">
+    <div class="container">
+      <div class="section-badge-center">
+        <span class="badge">KLİNİK UYGULAMALAR</span>
+        <h2>Kadim Tıp ve Modern Teknolojinin Sentezi</h2>
+        <p class="section-sub">Hekimlik tecrübesiyle doğru kombinlenen, hücre yenilenmesini ve mekanik dengeyi sağlayan tedavi yöntemleri.</p>
+      </div>
+
+      <div class="treatments-grid">
+        <div class="treatment-box">
+          <div class="t-badge">Biyomekanik</div>
+          <h3>Osteopati & Manuel Terapi</h3>
+          <p>Omurga, eklem ve fasyal kısıtlılıkları elle uygulanan hassas tekniklerle çözerek sinir iletimini ve iç organ dolaşımını optimize eder.</p>
+          <ul class="t-features">
+            <li>Postür ve Ayak Bası Dengeleme</li>
+            <li>Fasyal ve Kranio-Sakral Rahatlama</li>
+            <li>Bel, Boyun ve Sırt Blokajları</li>
+          </ul>
+        </div>
+
+        <div class="treatment-box">
+          <div class="t-badge">Biyokimya</div>
+          <h3>Fitoterapi & Kişiye Özel Kürler</h3>
+          <p>Standardize edilmiş tıbbi bitkisel özlerle hücresel detoksifikasyon, inflamasyon kontrolü ve bağırsak bariyer onarımı sağlanır.</p>
+          <ul class="t-features">
+            <li>Hedefe Yönelik Bitkisel Ekstreler</li>
+            <li>Bağırsak Mikrobiyota Düzenlemesi</li>
+            <li>Metabolik Denge ve pH Desteği</li>
+          </ul>
+        </div>
+
+        <div class="treatment-box highlight-box">
+          <div class="t-badge t-gold">Yüksek Teknoloji</div>
+          <h3>Robotik Lazer & Manyetik Alan</h3>
+          <p>Derin dokulara inen fotobiyomodülasyon enerjisiyle hücresel ATP üretimini tetikler, kıkırdak ve tendon rejenerasyonunu hızlandırır.</p>
+          <ul class="t-features">
+            <li>Ağrısız & İğnesiz Doku Onarımı</li>
+            <li>Kronik Ödem ve Enflamasyon Tasfiyesi</li>
+            <li>Hücre Yenilenmesini Hızlandırma</li>
+          </ul>
+        </div>
+
+        <div class="treatment-box">
+          <div class="t-badge">Rejeneratif</div>
+          <h3>PRP & Proloterapi</h3>
+          <p>Eklemlere, bağlara ve tendonlara uygulanan doğal onarıcı enjeksiyonlarla dokunun kendi kendini tamir mekanizmasını başlatır.</p>
+          <ul class="t-features">
+            <li>Eklem Sıvısı ve Kıkırdak Takviyesi</li>
+            <li>Bağ Dokusu Sıkılaştırma</li>
+            <li>Kireçlenme ve Menisküs Protokolleri</li>
+          </ul>
+        </div>
+
+        <div class="treatment-box">
+          <div class="t-badge">Geleneksel & Tamamlayıcı</div>
+          <h3>Medikal Ozon & Akupunktur</h3>
+          <p>Doku oksijenlenmesini maksimuma çıkarırken meridyen enerji hatlarını regüle ederek otonom sinir sistemi dengesini kurar.</p>
+          <ul class="t-features">
+            <li>Major & Lokal Medikal Ozon</li>
+            <li>Meridyen Taraması Destekli Akupunktur</li>
+            <li>Bağışıklık Güçlendirme</li>
+          </ul>
+        </div>
+
+        <div class="treatment-box">
+          <div class="t-badge">Hücresel Beslenme</div>
+          <h3>I.V. Serum & Mineral İnfüzyonu</h3>
+          <p>Sindirim sistemini baypas ederek damar yoluyla doğrudan hücreye ulaşan iz element, mineral ve yüksek doz antioksidan protokolleri.</p>
+          <ul class="t-features">
+            <li>Mitokondriyal Enerji ve Canlılık</li>
+            <li>Ağır Metal ve Toksin Arınması</li>
+            <li>Kişiselleştirilmiş Serum Karışımları</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="treatment-banner">
+        <div class="banner-content">
+          <h3>Hangi Tedavi Kombinasyonuna İhtiyacınız Var?</h3>
+          <p>Kliniğimizde ezbere protokol uygulanmaz. Önce mikrosistem ve biyomekanik taramanız yapılır, ardından hekiminiz size özel sentezi oluşturur.</p>
+        </div>
+        <a href="#waBox" class="btn-banner" onclick="document.getElementById('waBox').classList.add('active');">
+          Doktora Danışın
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- VİDEO & EĞİTİCİ İÇERİK VİTRİNİ -->
+  <section id="yazilar" class="media-section">
+    <div class="container">
+      <div class="section-badge-center">
+        <span class="badge">EĞİTİCİ İÇERİKLER & VİDEOLAR</span>
+        <h2>Hekiminizden Sağlık Rehberi</h2>
+        <p class="section-sub">Fitoterapi kürleri, mekanik egzersizler ve bütüncül sağlık ipuçlarıyla doğru bilgiye ilk elden ulaşın.</p>
+      </div>
+
+      <div class="media-filters">
+        <button class="filter-btn active">Tüm İçerikler</button>
+        <button class="filter-btn">Fitoterapi Kürleri</button>
+        <button class="filter-btn">Mekanik & Egzersiz</button>
+        <button class="filter-btn">Hastalık Rehberi</button>
+      </div>
+
+      <div class="media-grid">
+        <div class="media-card">
+          <div class="video-container">
+            <iframe src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ?controls=1" title="Fitoterapi Kürleri" allowfullscreen></iframe>
+          </div>
+          <div class="media-content">
+            <span class="media-tag">🌿 Fitoterapi</span>
+            <h3>Bağırsak Geçirgenliğini Onaran Doğal Kür Protokolü</h3>
+            <p>Geçirgen bağırsak ve mikrobiyota dengesizliklerinde kullanılan standardize bitkisel ekstreler ve beslenme tüyoları.</p>
+            <div class="media-meta">
+              <span>⏱️ 12 Dk</span>
+              <a href="https://www.youtube.com/@DrCeyhunNuri" target="_blank" class="watch-link">YouTube'da İzle ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="media-card">
+          <div class="video-container">
+            <iframe src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ?controls=1" title="Osteopati Egzersizleri" allowfullscreen></iframe>
+          </div>
+          <div class="media-content">
+            <span class="media-tag">🦴 Osteopati</span>
+            <h3>Bel ve Boyun Fıtığında Evde Uygulanabilecek Rahatlatma Teknikleri</h3>
+            <p>Omurga mekaniğini rahatlatan fasyal gevşeme hareketleri ve kendi kendinize uygulayabileceğiniz duruş egzersizleri.</p>
+            <div class="media-meta">
+              <span>⏱️ 15 Dk</span>
+              <a href="https://www.youtube.com/@DrCeyhunNuri" target="_blank" class="watch-link">YouTube'da İzle ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="media-card">
+          <div class="video-container">
+            <iframe src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ?controls=1" title="Kronik Ağrılar" allowfullscreen></iframe>
+          </div>
+          <div class="media-content">
+            <span class="media-tag">⚡ Bütüncül Tıp</span>
+            <h3>Fibromiyalji ve Kronik Yorgunluğun Bilinmeyen Kök Nedenleri</h3>
+            <p>Ağrının sadece kaslarda değil; hücresel enerji açığı, asidoz ve meridyen blokajlarıyla ilişkisi.</p>
+            <div class="media-meta">
+              <span>⏱️ 18 Dk</span>
+              <a href="https://www.youtube.com/@DrCeyhunNuri" target="_blank" class="watch-link">YouTube'da İzle ↗</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="channel-cta">
+        <p>Daha fazla eğitici video ve güncel sağlık içerikleri için resmî kanalımızı takip edin.</p>
+        <a href="https://www.youtube.com/@DrCeyhunNuri" target="_blank" class="btn-youtube">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          YouTube Kanalımıza Abone Olun
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ONLINE RANDEVU & ÖN DEĞERLENDİRME BÖLÜMÜ -->
+  <section id="randevu" class="appointment-section">
+    <div class="container">
+      <div class="appointment-card-wrapper">
+        <div class="appointment-info">
+          <span class="badge badge-light">KİŞİYE ÖZEL PROTOKOL</span>
+          <h2>Bütüncül İyileşme Sürecinize İlk Adımı Atın</h2>
+          <p>Klinik değerlendirme randevunuz için formu doldurarak ön talep oluşturabilirsiniz. Asistanımız uygun saatleri teyit etmek için sizinle ivedilikle iletişime geçecektir.</p>
+          
+          <div class="info-list">
+            <div class="info-item">
+              <span class="info-icon">📍</span>
+              <div>
+                <strong>Klinik Lokasyonu</strong>
+                <p>Mustafa Kemal Mah. 2079. Sk. No: 21/C Çankaya / ANKARA</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <span class="info-icon">📞</span>
+              <div>
+                <strong>Doğrudan İletişim Hattı</strong>
+                <p>+90 543 164 32 64</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <span class="info-icon">⏱️</span>
+              <div>
+                <strong>Klinik Çalışma Saatleri</strong>
+                <p>Pazartesi - Cumartesi: 09:30 - 18:30</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="appointment-form-box">
+          <h3>Online Randevu & Ön Bilgi Formu</h3>
+          <p class="form-desc">Lütfen bilgilerinizi eksiksiz doldurunuz.</p>
+          
+          <form id="mainAppointmentForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label>Adınız Soyadınız *</label>
+                <input type="text" id="formName" placeholder="Ad Soyad" required>
+              </div>
+              <div class="form-group">
+                <label>Telefon Numaranız *</label>
+                <input type="tel" id="formPhone" placeholder="05XX XXX XX XX" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label>İlgilendiğiniz Alan / Rahatsızlık</label>
+                <select id="formCategory">
+                  <option value="Genel Bütüncül Değerlendirme">Genel Bütüncül Değerlendirme</option>
+                  <option value="Ankilozan Spondilit & Romatizma">Ankilozan Spondilit & Romatizma</option>
+                  <option value="Bel ve Boyun Ağrıları / Fıtık">Bel ve Boyun Ağrıları / Fıtık</option>
+                  <option value="Fibromiyalji & Kronik Yorgunluk">Fibromiyalji & Kronik Yorgunluk</option>
+                  <option value="Fitoterapi & Beslenme Protokolü">Fitoterapi & Beslenme Protokolü</option>
+                  <option value="Osteopati & Manuel Terapi">Osteopati & Manuel Terapi</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Görüşmek İstediğiniz Tarih / Zaman</label>
+                <input type="text" id="formDate" placeholder="Örn: Hafta içi öğleden sonra">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Kısaca Şikayetiniz veya Notunuz</label>
+              <textarea id="formNote" rows="3" placeholder="Mevcut tanınız veya belirtileriniz..."></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit-main">
+              Randevu Talebini WhatsApp ile İlet ➔
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- İLETİŞİM & KLİNİK ADRES BÖLÜMÜ (FOOTER) -->
+  <footer id="iletisim" class="main-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-logo">
+            <span class="doctor-title-white">DR. Ceyhun NURİ</span>
+            <span class="sub-title-white">BÜTÜNCÜL SAĞLIK KLİNİĞİ</span>
+          </div>
+          <p class="footer-desc">
+            Bütüncül hekimlik anlayışı, kök neden analizi ve kişiselleştirilmiş tedavi protokolleriyle sağlığınıza kalıcı çözümler.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="col-title">Hızlı Bağlantılar</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="#hakkimizda">Hakkımızda & Yaklaşım</a></li>
+            <li><a href="#hastaliklar">Tedavi Edilen Hastalıklar</a></li>
+            <li><a href="#beslenme">Fitoterapi & Beslenme</a></li>
+            <li><a href="#iletisim">İletişim & Randevu</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col address-col">
+          <h4 class="col-title">Klinik Adresi & İletişim</h4>
+          <div class="contact-card">
+            <div class="contact-row">
+              <span class="c-icon">📍</span>
+              <div>
+                <strong>Açık Adres:</strong>
+                <p>Mustafa Kemal Mah. 2079. Sk. No: 21/C<br>Çankaya / ANKARA</p>
+              </div>
+            </div>
+            <div class="contact-row">
+              <span class="c-icon">📞</span>
+              <div>
+                <strong>Randevu & Bilgi:</strong>
+                <p>+90 543 164 32 64</p>
+              </div>
+            </div>
+            <a href="https://maps.google.com/?q=Mustafa+Kemal+Mah.+2079.+Sk.+No:21+Cankaya+Ankara" target="_blank" class="btn-map">
+              🗺️ Haritada Yol Tarifi Al
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Dr. Ceyhun NURİ Sağlık Kurumu. Tüm hakları saklıdır.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP SABİT BUTONU VE RANDEVU FORMU PENCERESİ -->
+  <div class="wa-container">
+    <div class="wa-box" id="waBox">
+      <div class="wa-box-header">
+        <div class="wa-doctor-info">
+          <img src="images/logo.png" alt="Logo" class="wa-avatar" onerror="this.src='https://ui-avatars.com/api/?name=Dr+Ceyhun&background=0f3d32&color=fff'">
+          <div>
+            <strong>Dr. Ceyhun NURİ Kliniği</strong>
+            <span>Genellikle birkaç dakikada yanıt verir</span>
+          </div>
+        </div>
+        <button class="wa-close-btn" id="waCloseBtn">&times;</button>
+      </div>
+
+      <div class="wa-box-body">
+        <p class="wa-hint">Randevu talebinizi ve müsait olduğunuz saati iletin, asistanımız hemen dönüş yapsın:</p>
+        
+        <form id="waForm">
+          <div class="wa-input-group">
+            <label>Adınız Soyadınız:</label>
+            <input type="text" id="waName" placeholder="Örn: Ahmet Yılmaz" required>
+          </div>
+
+          <div class="wa-input-group">
+            <label>Şikayetiniz / İlgilendiğiniz Tedavi:</label>
+            <input type="text" id="waService" placeholder="Örn: Bel Ağrısı, Fitoterapi...">
+          </div>
+
+          <div class="wa-input-group">
+            <label>Görüşme İçin Müsait Olduğunuz Gün ve Saat:</label>
+            <input type="text" id="waTime" placeholder="Örn: Pazartesi günü 14:00 - 16:00 arası" required>
+          </div>
+
+          <button type="submit" class="wa-btn-submit">
+            💬 WhatsApp ile Talebi Gönder
+          </button>
+        </form>
+
+        <div class="wa-divider"><span>VEYA</span></div>
+
+        <a href="https://wa.me/905431643264" target="_blank" class="wa-btn-call">
+          📞 Doğrudan WhatsApp Hattını Ara / Yaz
+        </a>
+      </div>
+    </div>
+
+    <button class="wa-float-trigger" id="waTrigger" aria-label="WhatsApp Randevu Hattı">
+      <svg viewBox="0 0 32 32" class="wa-icon-svg">
+        <path fill="#ffffff" d="M16 2a13.9 13.9 0 0 0-12 21L2 30l7.2-1.9A13.9 13.9 0 1 0 16 2zm0 25.5a11.5 11.5 0 0 1-5.9-1.6l-.4-.3-4.3 1.1 1.2-4.2-.3-.4A11.6 11.6 0 1 1 16 27.5zm6.4-8.6c-.3-.2-2-.9-2.3-1-.3-.2-.5-.2-.7.2s-.8 1-1 1.2-.4.2-.7.1a9.2 9.2 0 0 1-4.8-4.2c-.4-.7.4-.6 1.1-2 .1-.3 0-.5-.1-.7s-.7-1.7-1-2.3c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4s-1.2 1.2-1.2 2.8 1.2 3.3 1.4 3.5 2.4 3.7 5.8 5.1c.8.4 1.5.6 2 .8.8.3 1.6.2 2.2.1.7-.1 2-.8 2.3-1.6.3-.8.3-1.5.2-1.6-.1-.2-.3-.3-.6-.5z"/>
+      </svg>
+      <span class="wa-trigger-text">WhatsApp Randevu</span>
+    </button>
+  </div>
+
+  <!-- GENEL ARAMA MODAL PENCERESİ -->
+  <div class="search-modal-overlay" id="searchOverlay">
+    <div class="search-modal">
+      <div class="search-header">
+        <div class="search-input-wrap">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="siteSearchInput" placeholder="Makale, video, kür veya hastalık ara... (Örn: Fibromiyalji, Bağırsak, Diz)" autocomplete="off">
+          <button class="search-clear-btn" id="searchClearBtn">&times;</button>
+        </div>
+        <button class="search-close-modal" id="searchCloseBtn">Kapat (ESC)</button>
+      </div>
+
+      <div class="search-quick-tags">
+        <span>Önerilenler:</span>
+        <button class="q-tag" onclick="quickSearch('Fitoterapi')">🌿 Fitoterapi</button>
+        <button class="q-tag" onclick="quickSearch('Bel Ağrısı')">🦴 Bel Fıtığı</button>
+        <button class="q-tag" onclick="quickSearch('Mikrobiyota')">🦠 Mikrobiyota</button>
+        <button class="q-tag" onclick="quickSearch('Osteopati')">🩺 Osteopati</button>
+      </div>
+
+      <div class="search-results-list" id="searchResults">
+        <div class="search-empty-state">Aramak istediğiniz konuyu yukarıya yazın.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JAVASCRIPT ETKİLEŞİMLERİ -->
+  <script>
+    // 1. WhatsApp Randevu Pop-up
+    const waTrigger = document.getElementById('waTrigger');
+    const waBox = document.getElementById('waBox');
+    const waCloseBtn = document.getElementById('waCloseBtn');
+    const waForm = document.getElementById('waForm');
+
+    waTrigger.addEventListener('click', () => {
+      waBox.classList.toggle('active');
+    });
+
+    waCloseBtn.addEventListener('click', () => {
+      waBox.classList.remove('active');
+    });
+
+    waForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = document.getElementById('waName').value.trim();
+      const service = document.getElementById('waService').value.trim() || 'Genel Muayene';
+      const time = document.getElementById('waTime').value.trim();
+
+      const message = `Merhaba Dr. Ceyhun NURİ Kliniği, web sitenizden randevu talebinde bulunmak istiyorum.%0A%0A` +
+                      `👤 *Ad Soyad:* ${name}%0A` +
+                      `🩺 *Konu / Tedavi:* ${service}%0A` +
+                      `⏰ *Müsait Olduğum Saat:* ${time}%0A%0A` +
+                      `Randevu durumu ve detaylar hakkında bilgi alabilir miyim?`;
+
+      window.open(`https://wa.me/905431643264?text=${message}`, '_blank');
+      waBox.classList.remove('active');
+      waForm.reset();
+    });
+
+    // 2. Mobil Hamburger Menü
+    const mobileNavToggle = document.getElementById('mobileNavToggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    if (mobileNavToggle && navLinks) {
+      mobileNavToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('mobile-open');
+        mobileNavToggle.classList.toggle('active');
+      });
+
+      document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+          navLinks.classList.remove('mobile-open');
+          mobileNavToggle.classList.remove('active');
+        });
+      });
+    }
+
+    // 3. Ana Randevu Formu (Sayfa İçi)
+    const mainForm = document.getElementById('mainAppointmentForm');
+    if (mainForm) {
+      mainForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const name = document.getElementById('formName').value;
+        const phone = document.getElementById('formPhone').value;
+        const cat = document.getElementById('formCategory').value;
+        const date = document.getElementById('formDate').value || 'En erken müsait zaman';
+        const note = document.getElementById('formNote').value || 'Belirtilmedi';
+
+        const msg = `*Dr. Ceyhun NURİ Kliniği - Yeni Randevu Talebi*%0A%0A` +
+                    `👤 *Ad Soyad:* ${name}%0A` +
+                    `📞 *Telefon:* ${phone}%0A` +
+                    `🩺 *Alan / Şikayet:* ${cat}%0A` +
+                    `📅 *Tercih Edilen Zaman:* ${date}%0A` +
+                    `📝 *Hasta Notu:* ${note}`;
+
+        window.open(`https://wa.me/905431643264?text=${msg}`, '_blank');
+        mainForm.reset();
+      });
+    }
+
+    // 4. Genel Arama Motoru
+    const siteData = [
+      {
+        title: "Bağırsak Geçirgenliğini Onaran Doğal Kür Protokolü",
+        category: "Bitkisel Kür & Fitoterapi",
+        type: "video",
+        keywords: "bağırsak mikrobiyota sibo geçirgen bağırsak fitoterapi kür tarif beslenme",
+        link: "#yazilar"
+      },
+      {
+        title: "Bel ve Boyun Fıtığında Evde Mekanik Egzersizler",
+        category: "Osteopati & Egzersiz",
+        type: "video",
+        keywords: "bel fıtığı boyun fıtığı omurga osteopati mekanik video egzersiz duruş",
+        link: "#yazilar"
+      },
+      {
+        title: "Fibromiyalji ve Kronik Yorgunluğun Kök Nedenleri",
+        category: "Bütüncül Tıp Makalesi",
+        type: "makale",
+        keywords: "fibromiyalji yorgunluk kas ağrısı mitokondri halsizlik tükenmişlik",
+        link: "#yazilar"
+      },
+      {
+        title: "Ankilozan Spondilitte Bütüncül Yaklaşım",
+        category: "Hastalık Rehberi",
+        type: "rehber",
+        keywords: "ankilozan spondilit omurga romatizma sabah tutukluğu eklem",
+        link: "#hastaliklar"
+      },
+      {
+        title: "Romatoid Artrit ve Enflamasyon Yönetimi",
+        category: "Hastalık Rehberi",
+        type: "rehber",
+        keywords: "romatoid artrit iltihaplı romatizma eklem şişliği ödem bağışıklık",
+        link: "#hastaliklar"
+      },
+      {
+        title: "Robotik Lazer ve Manyetik Alan Tedavisi",
+        category: "Klinik Tedavi",
+        type: "tedavi",
+        keywords: "robotik lazer kıkırdak menisküs manyetik alan doku yenilenmesi atp hücre",
+        link: "#tedaviler"
+      },
+      {
+        title: "Diyabet ve İnsülin Direncinde Beslenme",
+        category: "Hastalık & Beslenme",
+        type: "rehber",
+        keywords: "diyabet şeker insülin direnci kilo metabolizma ph diyeti",
+        link: "#hastaliklar"
+      },
+      {
+        title: "Ozon Tedavisi ve Hücresel Oksijenlenme",
+        category: "Klinik Tedavi",
+        type: "tedavi",
+        keywords: "ozon medikal ozon majör ozon bağışıklık detoks damar serum",
+        link: "#tedaviler"
+      }
+    ];
+
+    const searchOverlay = document.getElementById('searchOverlay');
+    const searchOpenBtn = document.getElementById('searchOpenBtn');
+    const searchCloseBtn = document.getElementById('searchCloseBtn');
+    const siteSearchInput = document.getElementById('siteSearchInput');
+    const searchResults = document.getElementById('searchResults');
+    const searchClearBtn = document.getElementById('searchClearBtn');
+
+    searchOpenBtn.addEventListener('click', () => {
+      searchOverlay.classList.add('active');
+      siteSearchInput.focus();
+      renderSearchResults('');
+    });
+
+    function closeSearch() {
+      searchOverlay.classList.remove('active');
+      siteSearchInput.value = '';
+    }
+    searchCloseBtn.addEventListener('click', closeSearch);
+    searchOverlay.addEventListener('click', (e) => {
+      if (e.target === searchOverlay) closeSearch();
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && searchOverlay.classList.contains('active')) {
+        closeSearch();
+      }
+    });
+
+    searchClearBtn.addEventListener('click', () => {
+      siteSearchInput.value = '';
+      renderSearchResults('');
+      siteSearchInput.focus();
+    });
+
+    siteSearchInput.addEventListener('input', (e) => {
+      renderSearchResults(e.target.value.toLowerCase().trim());
+    });
+
+    window.quickSearch = function(query) {
+      siteSearchInput.value = query;
+      renderSearchResults(query.toLowerCase().trim());
+      siteSearchInput.focus();
+    };
+
+    function renderSearchResults(query) {
+      if (!query) {
+        searchResults.innerHTML = '<div class="search-empty-state">İlgilendiğiniz konuyu veya hastalığı yazarak arayın...</div>';
+        return;
+      }
+
+      const filtered = siteData.filter(item => 
+        item.title.toLowerCase().includes(query) || 
+        item.keywords.toLowerCase().includes(query) ||
+        item.category.toLowerCase().includes(query)
+      );
+
+      if (filtered.length === 0) {
+        searchResults.innerHTML = `
+          <div class="search-empty-state">
+            <p><strong>"${query}"</strong> ile ilgili eşleşen içerik bulunamadı.</p>
+            <span style="font-size:0.85rem;">Doğrudan bilgi almak için <a href="#waBox" onclick="closeSearch(); document.getElementById('waBox').classList.add('active');" style="color:var(--primary); font-weight:bold;">WhatsApp hattımıza</a> yazabilirsiniz.</span>
+          </div>`;
+        return;
+      }
+
+      searchResults.innerHTML = filtered.map(item => `
+        <a href="${item.link}" class="search-result-item" onclick="closeSearch();">
+          <div class="res-icon-wrap">
+            ${item.type === 'video' ? '▶️' : item.type === 'rehber' ? '📖' : '🩺'}
+          </div>
+          <div class="res-details">
+            <div class="res-cat">${item.category}</div>
+            <div class="res-title">${item.title}</div>
+          </div>
+          <span class="res-arrow">İncele →</span>
+        </a>
+      `).join('');
+    }
+    // === KESİN ÇALIŞAN ARAMA MOTORU FONKSİYONLARI ===
+    function openSearchModal() {
+      const overlay = document.getElementById('searchOverlay');
+      const input = document.getElementById('siteSearchInput');
+      if (overlay) {
+        overlay.classList.add('active');
+        overlay.style.display = 'flex'; // CSS çakışmasını engeller
+        if (input) {
+          setTimeout(() => input.focus(), 50);
+          renderSearchResults('');
+        }
+      }
+    }
+
+    function closeSearch() {
+      const overlay = document.getElementById('searchOverlay');
+      const input = document.getElementById('siteSearchInput');
+      if (overlay) {
+        overlay.classList.remove('active');
+        overlay.style.display = 'none';
+      }
+      if (input) input.value = '';
+    }
+
+    // Olay Dinleyicileri (Sayfa Hazır Olduğunda Bağla)
+    document.addEventListener('DOMContentLoaded', () => {
+      const searchCloseBtn = document.getElementById('searchCloseBtn');
+      const searchOverlay = document.getElementById('searchOverlay');
+      const siteSearchInput = document.getElementById('siteSearchInput');
+      const searchClearBtn = document.getElementById('searchClearBtn');
+
+      if (searchCloseBtn) searchCloseBtn.addEventListener('click', closeSearch);
+      
+      if (searchOverlay) {
+        searchOverlay.addEventListener('click', (e) => {
+          if (e.target === searchOverlay) closeSearch();
+        });
+      }
+
+      if (searchClearBtn) {
+        searchClearBtn.addEventListener('click', () => {
+          if (siteSearchInput) {
+            siteSearchInput.value = '';
+            renderSearchResults('');
+            siteSearchInput.focus();
+          }
+        });
+      }
+
+      if (siteSearchInput) {
+        siteSearchInput.addEventListener('input', (e) => {
+          renderSearchResults(e.target.value.toLowerCase().trim());
+        });
+      }
+    });
+
+    // ESC Tuşu ile Kapatma
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeSearch();
+    });
+  </script>
+</body>
+</html>
