@@ -43,7 +43,7 @@ h1, h2, h3, h4 {
   margin: 0 auto;
 }
 
-/* 1. TOP BAR */
+/* 1. TOP BAR & DİL SEÇİCİ */
 .top-bar {
   background: linear-gradient(90deg, #092720 0%, #113f34 100%);
   color: #cfded6;
@@ -58,6 +58,12 @@ h1, h2, h3, h4 {
   align-items: center;
 }
 
+.top-bar-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
 .contact-quick span {
   margin-right: 20px;
   display: inline-flex;
@@ -67,13 +73,52 @@ h1, h2, h3, h4 {
 .social-links a {
   color: #cfded6;
   text-decoration: none;
-  margin-left: 16px;
   font-weight: 500;
   transition: var(--transition);
+  margin-right: 12px;
 }
 
 .social-links a:hover {
   color: var(--accent);
+}
+
+/* Dil Seçici Butonları */
+.lang-switcher {
+  display: inline-flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 3px 10px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  gap: 6px;
+}
+
+.lang-btn {
+  background: none;
+  border: none;
+  color: #cfded6;
+  font-size: 0.74rem;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 2px 5px;
+  border-radius: 4px;
+  transition: var(--transition);
+  font-family: inherit;
+}
+
+.lang-btn:hover {
+  color: var(--accent);
+}
+
+.lang-btn.active {
+  background: var(--accent);
+  color: #0f3d32;
+  border-radius: 4px;
+}
+
+.lang-divider {
+  color: rgba(255, 255, 255, 0.25);
+  font-size: 0.7rem;
 }
 
 /* 2. ANA NAVİGASYON (HEADER) */
@@ -94,7 +139,6 @@ h1, h2, h3, h4 {
   gap: 15px;
 }
 
-/* LOGO */
 .logo-wrapper {
   display: flex;
   align-items: center;
@@ -543,12 +587,6 @@ h1, h2, h3, h4 {
 
 .warning-box strong {
   color: #ffffff;
-}
-
-.warning-box em {
-  color: var(--accent);
-  font-style: normal;
-  font-weight: 600;
 }
 
 /* 5. HASTALIKLAR BÖLÜMÜ */
@@ -1765,8 +1803,13 @@ h1, h2, h3, h4 {
 
   .top-bar-content {
     flex-direction: column;
-    gap: 6px;
+    gap: 8px;
     text-align: center;
+  }
+
+  .top-bar-right {
+    justify-content: center;
+    gap: 15px;
   }
 
   .contact-quick span {

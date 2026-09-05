@@ -17,9 +17,19 @@
         <span>📞 +90 543 164 32 64</span>
         <span>✉️ info@doktorsitesi.com</span>
       </div>
-      <div class="social-links">
-        <a href="https://www.instagram.com/drceyhunnuri/" target="_blank">Instagram</a>
-        <a href="https://www.youtube.com/@DrCeyhunNuri" target="_blank">YouTube</a>
+      <div class="top-bar-right">
+        <div class="social-links">
+          <a href="https://www.instagram.com/drceyhunnuri/" target="_blank">Instagram</a>
+          <a href="https://www.youtube.com/@DrCeyhunNuri" target="_blank">YouTube</a>
+        </div>
+        <!-- DİL SEÇİCİ (TR | EN | DE) -->
+        <div class="lang-switcher">
+          <button class="lang-btn active" onclick="changeLanguage('tr')">TR</button>
+          <span class="lang-divider">|</span>
+          <button class="lang-btn" onclick="changeLanguage('en')">EN</button>
+          <span class="lang-divider">|</span>
+          <button class="lang-btn" onclick="changeLanguage('de')">DE</button>
+        </div>
       </div>
     </div>
   </div>
@@ -38,65 +48,65 @@
         <img src="images/logo.png" alt="Dr. Ceyhun Nuri Logo" class="brand-logo" onerror="this.style.display='none'">
         <div class="logo-text">
           <span class="doctor-title">DR. Ceyhun NURİ</span>
-          <span class="sub-title">BÜTÜNCÜL TIP & SAĞLIKLI YAŞAM</span>
+          <span class="sub-title" data-i18n="logoSub">BÜTÜNCÜL TIP & SAĞLIKLI YAŞAM</span>
         </div>
       </a>
 
       <!-- AÇILIR MENÜLER (DROPDOWN NAV) -->
       <nav class="nav-links">
-        <div class="nav-item"><a href="index.html" class="nav-link active">Ana Sayfa</a></div>
-        <div class="nav-item"><a href="#hakkimizda" class="nav-link">Hakkımızda</a></div>
+        <div class="nav-item"><a href="index.html" class="nav-link active" data-i18n="navHome">Ana Sayfa</a></div>
+        <div class="nav-item"><a href="#hakkimizda" class="nav-link" data-i18n="navAbout">Hakkımızda</a></div>
 
         <!-- #Hastalıklar Dropdown -->
         <div class="nav-item dropdown">
-          <a href="#hastaliklar" class="nav-link">#Hastalıklar <span class="arrow">▾</span></a>
+          <a href="#hastaliklar" class="nav-link"><span data-i18n="navDiseases">#Hastalıklar</span> <span class="arrow">▾</span></a>
           <div class="dropdown-menu">
-            <a href="#">Ankilozan Spondilit</a>
-            <a href="#">Romatoid Artrit</a>
-            <a href="#">Fibromiyalji</a>
-            <a href="#">Bel Ağrısı</a>
-            <a href="#">Boyun Ağrısı</a>
-            <a href="#">Diyabet</a>
+            <a href="#hastaliklar" data-i18n="d1">Ankilozan Spondilit</a>
+            <a href="#hastaliklar" data-i18n="d2">Romatoid Artrit</a>
+            <a href="#hastaliklar" data-i18n="d3">Fibromiyalji</a>
+            <a href="#hastaliklar" data-i18n="d4">Bel Ağrısı</a>
+            <a href="#hastaliklar" data-i18n="d5">Boyun Ağrısı</a>
+            <a href="#hastaliklar" data-i18n="d6">Diyabet</a>
           </div>
         </div>
 
         <!-- #Beslenme ve Fitoterapi Dropdown -->
         <div class="nav-item dropdown">
-          <a href="#beslenme" class="nav-link">#Beslenme ve Fitoterapi <span class="arrow">▾</span></a>
+          <a href="#beslenme" class="nav-link"><span data-i18n="navNutrition">#Beslenme ve Fitoterapi</span> <span class="arrow">▾</span></a>
           <div class="dropdown-menu">
-            <a href="#">Fitoterapi Videoları</a>
-            <a href="#">Beslenme Kürleri</a>
+            <a href="#yazilar" data-i18n="navPhytoVid">Fitoterapi Videoları</a>
+            <a href="#yazilar" data-i18n="navNutriCures">Beslenme Kürleri</a>
           </div>
         </div>
 
-        <div class="nav-item"><a href="#tedaviler" class="nav-link">Tedaviler</a></div>
+        <div class="nav-item"><a href="#tedaviler" class="nav-link" data-i18n="navTreatments">Tedaviler</a></div>
 
         <!-- Osteopati ve Uygulamalar Dropdown -->
         <div class="nav-item dropdown">
-          <a href="#osteopati" class="nav-link">Osteopati ve Uygulamalar <span class="arrow">▾</span></a>
+          <a href="#osteopati" class="nav-link"><span data-i18n="navOsteo">Osteopati ve Uygulamalar</span> <span class="arrow">▾</span></a>
           <div class="dropdown-menu">
-            <a href="#">Mekanik Videolar</a>
-            <a href="#">Kendi Kendinizi Tedavi Edin</a>
+            <a href="#yazilar" data-i18n="navMechVid">Mekanik Videolar</a>
+            <a href="#yazilar" data-i18n="navSelfTreat">Kendi Kendinizi Tedavi Edin</a>
           </div>
         </div>
 
         <!-- Genel Sağlık Dropdown -->
         <div class="nav-item dropdown">
-          <a href="#genel-saglik" class="nav-link">Genel Sağlık <span class="arrow">▾</span></a>
+          <a href="#genel-saglik" class="nav-link"><span data-i18n="navHealth">Genel Sağlık</span> <span class="arrow">▾</span></a>
           <div class="dropdown-menu">
-            <a href="#">Sağlıklı Yaşam</a>
-            <a href="#">Estetik ve Güzellik</a>
-            <a href="#">Anti-aging</a>
+            <a href="#yazilar" data-i18n="navHealthLife">Sağlıklı Yaşam</a>
+            <a href="#yazilar" data-i18n="navAesthetic">Estetik ve Güzellik</a>
+            <a href="#yazilar" data-i18n="navAntiAging">Anti-aging</a>
           </div>
         </div>
 
-        <div class="nav-item"><a href="#yazilar" class="nav-link">Yazılar</a></div>
-        <div class="nav-item"><a href="#iletisim" class="nav-link">İletişim</a></div>
+        <div class="nav-item"><a href="#yazilar" class="nav-link" data-i18n="navArticles">Yazılar & Videolar</a></div>
+        <div class="nav-item"><a href="#iletisim" class="nav-link" data-i18n="navContact">İletişim</a></div>
       </nav>
 
       <!-- SAĞ BUTON & ARAMA -->
       <div style="display: flex; align-items: center; gap: 10px;">
-        <a href="#randevu" class="btn-appointment">Randevu Al</a>
+        <a href="#randevu" class="btn-appointment" data-i18n="btnNavApp">Randevu Al</a>
         <button class="search-trigger-btn" id="searchOpenBtn" onclick="openSearchModal()" aria-label="Sitede Ara">
           <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="pointer-events: none;">
             <circle cx="11" cy="11" r="8"></circle>
@@ -113,13 +123,13 @@
     <div class="container hero-grid">
       <div class="hero-text">
         <div class="badge-wrap">
-          <span class="badge">🌿 BÜTÜNCÜL SAĞLIK YAKLAŞIMI</span>
+          <span class="badge" data-i18n="heroBadge">🌿 BÜTÜNCÜL SAĞLIK YAKLAŞIMI</span>
         </div>
-        <h1>Sağlığınıza Bütüncül ve Kalıcı Çözüm</h1>
-        <p>Hastalıkların semptomlarını baskılamak yerine vücudun biyolojik dengesini kök nedenleriyle yeniden kuran kişiye özel, bilimsel ve fonksiyonel tedavi protokolleri.</p>
+        <h1 data-i18n="heroTitle">Sağlığınıza Bütüncül ve Kalıcı Çözüm</h1>
+        <p data-i18n="heroDesc">Hastalıkların semptomlarını baskılamak yerine vücudun biyolojik dengesini kök nedenleriyle yeniden kuran kişiye özel, bilimsel ve fonksiyonel tedavi protokolleri.</p>
         <div class="hero-actions">
-          <a href="#randevu" class="btn-primary">Online Randevu Talebi</a>
-          <a href="#tedaviler" class="btn-outline">Tedavi Alanları</a>
+          <a href="#randevu" class="btn-primary" data-i18n="heroBtnApp">Online Randevu Talebi</a>
+          <a href="#tedaviler" class="btn-outline" data-i18n="heroBtnTreat">Tedavi Alanları</a>
         </div>
       </div>
       <div class="hero-image">
@@ -135,24 +145,24 @@
     <div class="container">
       <div class="about-header-grid">
         <div class="about-title-box">
-          <span class="sub-heading">BÜTÜNCÜL HEKİMLİK VİZYONU</span>
-          <h2>Dr. Ceyhun NURİ Sağlık Kliniği</h2>
-          <p class="about-intro">
+          <span class="sub-heading" data-i18n="aboutSubHeading">BÜTÜNCÜL HEKİMLİK VİZYONU</span>
+          <h2 data-i18n="aboutTitle">Dr. Ceyhun NURİ Sağlık Kliniği</h2>
+          <p class="about-intro" data-i18n="aboutIntro">
             Dr. Ceyhun Nuri Sağlık Kurumunda hastaya yaklaşım teşhis ve tedavi olmak üzere iki temel bölümden oluşmaktadır.
           </p>
         </div>
         <div class="about-stats">
           <div class="stat-item">
             <h4>15<span>+</span></h4>
-            <p>Yıllık Klinik Tecrübe</p>
+            <p data-i18n="stat1">Yıllık Klinik Tecrübe</p>
           </div>
           <div class="stat-item">
             <h4>3000<span>+</span></h4>
-            <p>Danışan & Hasta Takibi</p>
+            <p data-i18n="stat2">Danışan & Hasta Takibi</p>
           </div>
           <div class="stat-item">
             <h4>100<span>+</span></h4>
-            <p>Bilimsel Video & Makale</p>
+            <p data-i18n="stat3">Bilimsel Video & Makale</p>
           </div>
         </div>
       </div>
@@ -160,63 +170,57 @@
       <div class="approach-wrapper">
         <!-- Bölüm 1: Teşhis Aşaması -->
         <div class="approach-card">
-          <div class="card-badge">BÖLÜM 1</div>
-          <h3>Teşhis ve Beden Göstergeleri</h3>
-          <p>Teşhis aşaması, öncelikle bildiğiniz şekliyle mutlaka kişinin laboratuvar ve görüntüleme tetkiklerinin değerlendirmesiyle başlar. Bundan sonraki aşamada öncelikle beden belirtilerini tanımamıza yardım edecek iki ana teşhis-tespit yoluna başvurulmaktadır:</p>
+          <div class="card-badge" data-i18n="part1Badge">BÖLÜM 1</div>
+          <h3 data-i18n="part1Title">Teşhis ve Beden Göstergeleri</h3>
+          <p data-i18n="part1Intro">Teşhis aşaması, öncelikle bildiğiniz şekliyle mutlaka kişinin laboratuvar ve görüntüleme tetkiklerinin değerlendirmesiyle başlar. Bundan sonraki aşamada öncelikle beden belirtilerini tanımamıza yardım edecek iki ana teşhis-tespit yoluna başvurulmaktadır:</p>
           
           <div class="step-box">
             <div class="step-num">1</div>
             <div>
-              <strong>Kas-İskelet ve Biyomekanik Analiz:</strong>
-              <p>Kas iskelet sisteminin iç organlar üzerine veya aksi yönde etkisini tespit edebilmek için postür analizi, ayak bası analizi, omurga-kalçanın biyomekaniği osteopati anlayışı çerçevesinde değerlendirilir.</p>
+              <strong data-i18n="step1Title">Kas-İskelet ve Biyomekanik Analiz:</strong>
+              <p data-i18n="step1Desc">Kas iskelet sisteminin iç organlar üzerine veya aksi yönde etkisini tespit edebilmek için postür analizi, ayak bası analizi, omurga-kalçanın biyomekaniği osteopati anlayışı çerçevesinde değerlendirilir.</p>
             </div>
           </div>
 
           <div class="step-box">
             <div class="step-num">2</div>
             <div>
-              <strong>Metabolik ve Mikrosistem Analizi:</strong>
-              <p>Organların metabolik durumları hakkında bilgi edinmek için, vücut pH ölçümü, kulak mikrosistem tarama, dil üzerinden teşhis, meridyen-enerji kanal taraması (check up) ve en önemlisi <em>Osteopat Hekim</em> anlayışı içerisinde fiziksel değerlendirme yapılır.</p>
+              <strong data-i18n="step2Title">Metabolik ve Mikrosistem Analizi:</strong>
+              <p data-i18n="step2Desc">Organların metabolik durumları hakkında bilgi edinmek için, vücut pH ölçümü, kulak mikrosistem tarama, dil üzerinden teşhis, meridyen-enerji kanal taraması (check up) ve en önemlisi Osteopat Hekim anlayışı içerisinde fiziksel değerlendirme yapılır.</p>
             </div>
           </div>
 
-          <div class="highlight-quote">
+          <div class="highlight-quote" data-i18n="part1Quote">
             Ancak bu şekilde nedenini açıklayamadığınız kronik hastalığınızın altyapısı isabetli ve güçlü bir teşhisle ortaya konur. Kullandığımız bu teknoloji ve yöntemler; vücut mikrosistemlerini, ısısını, enerjisini ve biyomekaniğini kullanarak henüz kan ve diğer laboratuvar tetkiklerine yansımayan vakaların dahi tespit edilmesinde çok ciddi bir olanak sağlamaktadır.
           </div>
 
-          <p class="summary-note">Her biri alanında tecrübe sahibi ekibimizle birlikte tedavi planlaması yaparken; kadimden gelen bilgiler ve güncel tıp anlayışı içinde hastaya özel reçete hazırlanmasını esas hedef olarak görürüz.</p>
+          <p class="summary-note" data-i18n="part1Note">Her biri alanında tecrübe sahibi ekibimizle birlikte tedavi planlaması yaparken; kadimden gelen bilgiler ve güncel tıp anlayışı içinde hastaya özel reçete hazırlanmasını esas hedef olarak görürüz.</p>
         </div>
 
         <!-- Bölüm 2: Tedavi Alanı -->
         <div class="approach-card treatment-card">
-          <div class="card-badge">BÖLÜM 2</div>
-          <h3>Tedavi Alanı ve Enstrümanlar</h3>
-          <p>Kliniğin ikinci bölümü tedavi alanından oluşmaktadır. Bu alanda, hastaya özgü ana tedavi protokolüne destek olarak bütüncül tıp enstrümanları uygulanmaktadır:</p>
+          <div class="card-badge" data-i18n="part2Badge">BÖLÜM 2</div>
+          <h3 data-i18n="part2Title">Tedavi Alanı ve Enstrümanlar</h3>
+          <p data-i18n="part2Intro">Kliniğin ikinci bölümü tedavi alanından oluşmaktadır. Bu alanda, hastaya özgü ana tedavi protokolüne destek olarak bütüncül tıp enstrümanları uygulanmaktadır:</p>
 
           <div class="treatment-tags">
             <span>Manuel Terapi</span>
             <span>Osteopati</span>
             <span>Kayropraksi</span>
             <span>Fitoterapi</span>
-            <span>Akupunktur & Akupressür</span>
+            <span>Akupunktur</span>
             <span>Robotik Lazer</span>
             <span>Elektrostimülasyon</span>
-            <span>Çin Manipülasyonu</span>
             <span>Medikal Ozon</span>
-            <span>Mezoterapi</span>
             <span>PRP</span>
             <span>Proloterapi</span>
             <span>Magneto Terapi</span>
-            <span>Kuru İğneleme</span>
-            <span>Hacamat</span>
-            <span>Hirudoterapi (Sülük)</span>
-            <span>Kuru Kupa</span>
-            <span>I.V. Destekler (Mineral / İz Element)</span>
+            <span>I.V. Destekler</span>
           </div>
 
           <div class="warning-box">
-            <h4>ANCAK UNUTULMAMALIDIR Kİ;</h4>
-            <p>Bütün bu uygulamalar tekil olarak hastalarda istenen sonucu doğurmayabilir. Çünkü bunlar tek başına birer <strong>enstrümandır / alettir</strong>. Başarıyı yakalayan; hastanın kök nedenine göre bunlardan <em>doğru sentez ve kombinasyonları</em> oluşturan <strong>HEKİMLİK BİLİNCİDİR</strong>.</p>
+            <h4 data-i18n="warnTitle">ANCAK UNUTULMAMALIDIR Kİ;</h4>
+            <p data-i18n="warnDesc">Bütün bu uygulamalar tekil olarak hastalarda istenen sonucu doğurmayabilir. Çünkü bunlar tek başına birer enstrümandır. Başarıyı yakalayan; hastanın kök nedenine göre bunlardan doğru sentez ve kombinasyonları oluşturan HEKİMLİK BİLİNCİDİR.</p>
           </div>
         </div>
       </div>
@@ -227,52 +231,52 @@
   <section id="hastaliklar" class="diseases-section">
     <div class="container">
       <div class="section-badge-center">
-        <span class="badge">UZMANLIK ALANLARI</span>
-        <h2>Semptomları Değil, Kök Nedeni İyileştiriyoruz</h2>
-        <p class="section-sub">Kronik ağrı ve inflamasyon süreçlerinde hücresel ve biyomekanik temelli tedavi yaklaşımı.</p>
+        <span class="badge" data-i18n="disBadge">UZMANLIK ALANLARI</span>
+        <h2 data-i18n="disHeading">Semptomları Değil, Kök Nedeni İyileştiriyoruz</h2>
+        <p class="section-sub" data-i18n="disSub">Kronik ağrı ve inflamasyon süreçlerinde hücresel ve biyomekanik temelli tedavi yaklaşımı.</p>
       </div>
 
       <div class="diseases-grid">
         <div class="disease-card">
           <div class="d-icon">🦴</div>
-          <h3>Ankilozan Spondilit</h3>
-          <p>Omurga sertliği ve sabah tutukluklarında; bağırsak geçirgenliği, mikrobiyota düzenlemesi ve osteopatik postür desteği.</p>
-          <a href="#randevu" class="d-link">Tedavi Protokolünü İncele →</a>
+          <h3 data-i18n="cardD1Title">Ankilozan Spondilit</h3>
+          <p data-i18n="cardD1Desc">Omurga sertliği ve sabah tutukluklarında; bağırsak geçirgenliği, mikrobiyota düzenlemesi ve osteopatik postür desteği.</p>
+          <a href="#randevu" class="d-link" data-i18n="btnReviewProto">Tedavi Protokolünü İncele →</a>
         </div>
 
         <div class="disease-card">
           <div class="d-icon">🖐️</div>
-          <h3>Romatoid Artrit</h3>
-          <p>Eklem iltihaplarını baskılamak yerine immün toleransı yeniden kazandıran fitoterapi ve hücresel detoks yaklaşımları.</p>
-          <a href="#randevu" class="d-link">Tedavi Protokolünü İncele →</a>
+          <h3 data-i18n="cardD2Title">Romatoid Artrit</h3>
+          <p data-i18n="cardD2Desc">Eklem iltihaplarını baskılamak yerine immün toleransı yeniden kazandıran fitoterapi ve hücresel detoks yaklaşımları.</p>
+          <a href="#randevu" class="d-link" data-i18n="btnReviewProto">Tedavi Protokolünü İncele →</a>
         </div>
 
         <div class="disease-card">
           <div class="d-icon">⚡</div>
-          <h3>Fibromiyalji & Kronik Yorgunluk</h3>
-          <p>Mitokondriyal enerji düşüklüğü, uyku kalitesi ve kronik yaygın kas ağrılarına bütüncül mikrosistem müdahalesi.</p>
-          <a href="#randevu" class="d-link">Tedavi Protokolünü İncele →</a>
+          <h3 data-i18n="cardD3Title">Fibromiyalji & Kronik Yorgunluk</h3>
+          <p data-i18n="cardD3Desc">Mitokondriyal enerji düşüklüğü, uyku kalitesi ve kronik yaygın kas ağrılarına bütüncül mikrosistem müdahalesi.</p>
+          <a href="#randevu" class="d-link" data-i18n="btnReviewProto">Tedavi Protokolünü İncele →</a>
         </div>
 
         <div class="disease-card">
           <div class="d-icon">🩺</div>
-          <h3>Bel & Boyun Fıtığı / Ağrıları</h3>
-          <p>Fıtık ve kireçlenmelerde omurga biyomekaniğini düzelten kayropraksi, osteopati ve hedefe yönelik kuru iğneleme.</p>
-          <a href="#randevu" class="d-link">Tedavi Protokolünü İncele →</a>
+          <h3 data-i18n="cardD4Title">Bel & Boyun Fıtığı / Ağrıları</h3>
+          <p data-i18n="cardD4Desc">Fıtık ve kireçlenmelerde omurga biyomekaniğini düzelten kayropraksi, osteopati ve hedefe yönelik kuru iğneleme.</p>
+          <a href="#randevu" class="d-link" data-i18n="btnReviewProto">Tedavi Protokolünü İncele →</a>
         </div>
 
         <div class="disease-card">
           <div class="d-icon">🔬</div>
-          <h3>Diyabet & İnsülin Direnci</h3>
-          <p>Kişiye özel beslenme kürleri, pH dengesi ve doku yenilenmesini destekleyen damar içi (I.V.) protokoller.</p>
-          <a href="#randevu" class="d-link">Tedavi Protokolünü İncele →</a>
+          <h3 data-i18n="cardD5Title">Diyabet & İnsülin Direnci</h3>
+          <p data-i18n="cardD5Desc">Kişiye özel beslenme kürleri, pH dengesi ve doku yenilenmesini destekleyen damar içi (I.V.) protokoller.</p>
+          <a href="#randevu" class="d-link" data-i18n="btnReviewProto">Tedavi Protokolünü İncele →</a>
         </div>
 
         <div class="disease-card">
           <div class="d-icon">🌿</div>
-          <h3>Geçirgen Bağırsak & SIBO</h3>
-          <p>Bağışıklığın %70'ini yöneten bağırsak florasını onararak tüm otoimmün tetikleyicileri kaynağında durdurma.</p>
-          <a href="#randevu" class="d-link">Tedavi Protokolünü İncele →</a>
+          <h3 data-i18n="cardD6Title">Geçirgen Bağırsak & SIBO</h3>
+          <p data-i18n="cardD6Desc">Bağışıklığın %70'ini yöneten bağırsak florasını onararak tüm otoimmün tetikleyicileri kaynağında durdurma.</p>
+          <a href="#randevu" class="d-link" data-i18n="btnReviewProto">Tedavi Protokolünü İncele →</a>
         </div>
       </div>
     </div>
@@ -282,85 +286,85 @@
   <section id="tedaviler" class="treatments-section">
     <div class="container">
       <div class="section-badge-center">
-        <span class="badge">KLİNİK UYGULAMALAR</span>
-        <h2>Kadim Tıp ve Modern Teknolojinin Sentezi</h2>
-        <p class="section-sub">Hekimlik tecrübesiyle doğru kombinlenen, hücre yenilenmesini ve mekanik dengeyi sağlayan tedavi yöntemleri.</p>
+        <span class="badge" data-i18n="treatBadge">KLİNİK UYGULAMALAR</span>
+        <h2 data-i18n="treatHeading">Kadim Tıp ve Modern Teknolojinin Sentezi</h2>
+        <p class="section-sub" data-i18n="treatSub">Hekimlik tecrübesiyle doğru kombinlenen, hücre yenilenmesini ve mekanik dengeyi sağlayan tedavi yöntemleri.</p>
       </div>
 
       <div class="treatments-grid">
         <div class="treatment-box">
-          <div class="t-badge">Biyomekanik</div>
-          <h3>Osteopati & Manuel Terapi</h3>
-          <p>Omurga, eklem ve fasyal kısıtlılıkları elle uygulanan hassas tekniklerle çözerek sinir iletimini ve iç organ dolaşımını optimize eder.</p>
+          <div class="t-badge" data-i18n="t1Badge">Biyomekanik</div>
+          <h3 data-i18n="t1Title">Osteopati & Manuel Terapi</h3>
+          <p data-i18n="t1Desc">Omurga, eklem ve fasyal kısıtlılıkları elle uygulanan hassas tekniklerle çözerek sinir iletimini ve iç organ dolaşımını optimize eder.</p>
           <ul class="t-features">
-            <li>Postür ve Ayak Bası Dengeleme</li>
-            <li>Fasyal ve Kranio-Sakral Rahatlama</li>
-            <li>Bel, Boyun ve Sırt Blokajları</li>
+            <li data-i18n="t1F1">Postür ve Ayak Bası Dengeleme</li>
+            <li data-i18n="t1F2">Fasyal ve Kranio-Sakral Rahatlama</li>
+            <li data-i18n="t1F3">Bel, Boyun ve Sırt Blokajları</li>
           </ul>
         </div>
 
         <div class="treatment-box">
-          <div class="t-badge">Biyokimya</div>
-          <h3>Fitoterapi & Kişiye Özel Kürler</h3>
-          <p>Standardize edilmiş tıbbi bitkisel özlerle hücresel detoksifikasyon, inflamasyon kontrolü ve bağırsak bariyer onarımı sağlanır.</p>
+          <div class="t-badge" data-i18n="t2Badge">Biyokimya</div>
+          <h3 data-i18n="t2Title">Fitoterapi & Kişiye Özel Kürler</h3>
+          <p data-i18n="t2Desc">Standardize edilmiş tıbbi bitkisel özlerle hücresel detoksifikasyon, inflamasyon kontrolü ve bağırsak bariyer onarımı sağlanır.</p>
           <ul class="t-features">
-            <li>Hedefe Yönelik Bitkisel Ekstreler</li>
-            <li>Bağırsak Mikrobiyota Düzenlemesi</li>
-            <li>Metabolik Denge ve pH Desteği</li>
+            <li data-i18n="t2F1">Hedefe Yönelik Bitkisel Ekstreler</li>
+            <li data-i18n="t2F2">Bağırsak Mikrobiyota Düzenlemesi</li>
+            <li data-i18n="t2F3">Metabolik Denge ve pH Desteği</li>
           </ul>
         </div>
 
         <div class="treatment-box highlight-box">
-          <div class="t-badge t-gold">Yüksek Teknoloji</div>
-          <h3>Robotik Lazer & Manyetik Alan</h3>
-          <p>Derin dokulara inen fotobiyomodülasyon enerjisiyle hücresel ATP üretimini tetikler, kıkırdak ve tendon rejenerasyonunu hızlandırır.</p>
+          <div class="t-badge t-gold" data-i18n="t3Badge">Yüksek Teknoloji</div>
+          <h3 data-i18n="t3Title">Robotik Lazer & Manyetik Alan</h3>
+          <p data-i18n="t3Desc">Derin dokulara inen fotobiyomodülasyon enerjisiyle hücresel ATP üretimini tetikler, kıkırdak ve tendon rejenerasyonunu hızlandırır.</p>
           <ul class="t-features">
-            <li>Ağrısız & İğnesiz Doku Onarımı</li>
-            <li>Kronik Ödem ve Enflamasyon Tasfiyesi</li>
-            <li>Hücre Yenilenmesini Hızlandırma</li>
+            <li data-i18n="t3F1">Ağrısız & İğnesiz Doku Onarımı</li>
+            <li data-i18n="t3F2">Kronik Ödem ve Enflamasyon Tasfiyesi</li>
+            <li data-i18n="t3F3">Hücre Yenilenmesini Hızlandırma</li>
           </ul>
         </div>
 
         <div class="treatment-box">
-          <div class="t-badge">Rejeneratif</div>
-          <h3>PRP & Proloterapi</h3>
-          <p>Eklemlere, bağlara ve tendonlara uygulanan doğal onarıcı enjeksiyonlarla dokunun kendi kendini tamir mekanizmasını başlatır.</p>
+          <div class="t-badge" data-i18n="t4Badge">Rejeneratif</div>
+          <h3 data-i18n="t4Title">PRP & Proloterapi</h3>
+          <p data-i18n="t4Desc">Eklemlere, bağlara ve tendonlara uygulanan doğal onarıcı enjeksiyonlarla dokunun kendi kendini tamir mekanizmasını başlatır.</p>
           <ul class="t-features">
-            <li>Eklem Sıvısı ve Kıkırdak Takviyesi</li>
-            <li>Bağ Dokusu Sıkılaştırma</li>
-            <li>Kireçlenme ve Menisküs Protokolleri</li>
+            <li data-i18n="t4F1">Eklem Sıvısı ve Kıkırdak Takviyesi</li>
+            <li data-i18n="t4F2">Bağ Dokusu Sıkılaştırma</li>
+            <li data-i18n="t4F3">Kireçlenme ve Menisküs Protokolleri</li>
           </ul>
         </div>
 
         <div class="treatment-box">
-          <div class="t-badge">Geleneksel & Tamamlayıcı</div>
-          <h3>Medikal Ozon & Akupunktur</h3>
-          <p>Doku oksijenlenmesini maksimuma çıkarırken meridyen enerji hatlarını regüle ederek otonom sinir sistemi dengesini kurar.</p>
+          <div class="t-badge" data-i18n="t5Badge">Geleneksel & Tamamlayıcı</div>
+          <h3 data-i18n="t5Title">Medikal Ozon & Akupunktur</h3>
+          <p data-i18n="t5Desc">Doku oksijenlenmesini maksimuma çıkarırken meridyen enerji hatlarını regüle ederek otonom sinir sistemi dengesini kurar.</p>
           <ul class="t-features">
-            <li>Major & Lokal Medikal Ozon</li>
-            <li>Meridyen Taraması Destekli Akupunktur</li>
-            <li>Bağışıklık Güçlendirme</li>
+            <li data-i18n="t5F1">Major & Lokal Medikal Ozon</li>
+            <li data-i18n="t5F2">Meridyen Taraması Destekli Akupunktur</li>
+            <li data-i18n="t5F3">Bağışıklık Güçlendirme</li>
           </ul>
         </div>
 
         <div class="treatment-box">
-          <div class="t-badge">Hücresel Beslenme</div>
-          <h3>I.V. Serum & Mineral İnfüzyonu</h3>
-          <p>Sindirim sistemini baypas ederek damar yoluyla doğrudan hücreye ulaşan iz element, mineral ve yüksek doz antioksidan protokolleri.</p>
+          <div class="t-badge" data-i18n="t6Badge">Hücresel Beslenme</div>
+          <h3 data-i18n="t6Title">I.V. Serum & Mineral İnfüzyonu</h3>
+          <p data-i18n="t6Desc">Sindirim sistemini baypas ederek damar yoluyla doğrudan hücreye ulaşan iz element, mineral ve yüksek doz antioksidan protokolleri.</p>
           <ul class="t-features">
-            <li>Mitokondriyal Enerji ve Canlılık</li>
-            <li>Ağır Metal ve Toksin Arınması</li>
-            <li>Kişiselleştirilmiş Serum Karışımları</li>
+            <li data-i18n="t6F1">Mitokondriyal Enerji ve Canlılık</li>
+            <li data-i18n="t6F2">Ağır Metal ve Toksin Arınması</li>
+            <li data-i18n="t6F3">Kişiselleştirilmiş Serum Karışımları</li>
           </ul>
         </div>
       </div>
 
       <div class="treatment-banner">
         <div class="banner-content">
-          <h3>Hangi Tedavi Kombinasyonuna İhtiyacınız Var?</h3>
-          <p>Kliniğimizde ezbere protokol uygulanmaz. Önce mikrosistem ve biyomekanik taramanız yapılır, ardından hekiminiz size özel sentezi oluşturur.</p>
+          <h3 data-i18n="bannerTitle">Hangi Tedavi Kombinasyonuna İhtiyacınız Var?</h3>
+          <p data-i18n="bannerDesc">Kliniğimizde ezbere protokol uygulanmaz. Önce mikrosistem ve biyomekanik taramanız yapılır, ardından hekiminiz size özel sentezi oluşturur.</p>
         </div>
-        <a href="#waBox" class="btn-banner" onclick="document.getElementById('waBox').classList.add('active');">
+        <a href="#waBox" class="btn-banner" onclick="document.getElementById('waBox').classList.add('active');" data-i18n="btnConsultDoc">
           Doktora Danışın
         </a>
       </div>
@@ -371,16 +375,16 @@
   <section id="yazilar" class="media-section">
     <div class="container">
       <div class="section-badge-center">
-        <span class="badge">EĞİTİCİ İÇERİKLER & VİDEOLAR</span>
-        <h2>Hekiminizden Sağlık Rehberi</h2>
-        <p class="section-sub">Fitoterapi kürleri, mekanik egzersizler ve bütüncül sağlık ipuçlarıyla doğru bilgiye ilk elden ulaşın.</p>
+        <span class="badge" data-i18n="mediaBadge">EĞİTİCİ İÇERİKLER & VİDEOLAR</span>
+        <h2 data-i18n="mediaHeading">Hekiminizden Sağlık Rehberi</h2>
+        <p class="section-sub" data-i18n="mediaSub">Fitoterapi kürleri, mekanik egzersizler ve bütüncül sağlık ipuçlarıyla doğru bilgiye ilk elden ulaşın.</p>
       </div>
 
       <div class="media-filters">
-        <button class="filter-btn active">Tüm İçerikler</button>
-        <button class="filter-btn">Fitoterapi Kürleri</button>
-        <button class="filter-btn">Mekanik & Egzersiz</button>
-        <button class="filter-btn">Hastalık Rehberi</button>
+        <button class="filter-btn active" data-i18n="fAll">Tüm İçerikler</button>
+        <button class="filter-btn" data-i18n="fPhyto">Fitoterapi Kürleri</button>
+        <button class="filter-btn" data-i18n="fMech">Mekanik & Egzersiz</button>
+        <button class="filter-btn" data-i18n="fGuide">Hastalık Rehberi</button>
       </div>
 
       <div class="media-grid">
@@ -390,11 +394,11 @@
           </div>
           <div class="media-content">
             <span class="media-tag">🌿 Fitoterapi</span>
-            <h3>Bağırsak Geçirgenliğini Onaran Doğal Kür Protokolü</h3>
-            <p>Geçirgen bağırsak ve mikrobiyota dengesizliklerinde kullanılan standardize bitkisel ekstreler ve beslenme tüyoları.</p>
+            <h3 data-i18n="v1Title">Bağırsak Geçirgenliğini Onaran Doğal Kür Protokolü</h3>
+            <p data-i18n="v1Desc">Geçirgen bağırsak ve mikrobiyota dengesizliklerinde kullanılan standardize bitkisel ekstreler ve beslenme tüyoları.</p>
             <div class="media-meta">
               <span>⏱️ 12 Dk</span>
-              <a href="https://www.youtube.com/@DrCeyhunNuri" target="_blank" class="watch-link">YouTube'da İzle ↗</a>
+              <a href="https://www.youtube.com/@DrCeyhunNuri" target="_blank" class="watch-link" data-i18n="btnWatchYt">YouTube'da İzle ↗</a>
             </div>
           </div>
         </div>
@@ -405,11 +409,11 @@
           </div>
           <div class="media-content">
             <span class="media-tag">🦴 Osteopati</span>
-            <h3>Bel ve Boyun Fıtığında Evde Uygulanabilecek Rahatlatma Teknikleri</h3>
-            <p>Omurga mekaniğini rahatlatan fasyal gevşeme hareketleri ve kendi kendinize uygulayabileceğiniz duruş egzersizleri.</p>
+            <h3 data-i18n="v2Title">Bel ve Boyun Fıtığında Evde Uygulanabilecek Rahatlatma Teknikleri</h3>
+            <p data-i18n="v2Desc">Omurga mekaniğini rahatlatan fasyal gevşeme hareketleri ve kendi kendinize uygulayabileceğiniz duruş egzersizleri.</p>
             <div class="media-meta">
               <span>⏱️ 15 Dk</span>
-              <a href="https://www.youtube.com/@DrCeyhunNuri" target="_blank" class="watch-link">YouTube'da İzle ↗</a>
+              <a href="https://www.youtube.com/@DrCeyhunNuri" target="_blank" class="watch-link" data-i18n="btnWatchYt">YouTube'da İzle ↗</a>
             </div>
           </div>
         </div>
@@ -420,21 +424,21 @@
           </div>
           <div class="media-content">
             <span class="media-tag">⚡ Bütüncül Tıp</span>
-            <h3>Fibromiyalji ve Kronik Yorgunluğun Bilinmeyen Kök Nedenleri</h3>
-            <p>Ağrının sadece kaslarda değil; hücresel enerji açığı, asidoz ve meridyen blokajlarıyla ilişkisi.</p>
+            <h3 data-i18n="v3Title">Fibromiyalji ve Kronik Yorgunluğun Bilinmeyen Kök Nedenleri</h3>
+            <p data-i18n="v3Desc">Ağrının sadece kaslarda değil; hücresel enerji açığı, asidoz ve meridyen blokajlarıyla ilişkisi.</p>
             <div class="media-meta">
               <span>⏱️ 18 Dk</span>
-              <a href="https://www.youtube.com/@DrCeyhunNuri" target="_blank" class="watch-link">YouTube'da İzle ↗</a>
+              <a href="https://www.youtube.com/@DrCeyhunNuri" target="_blank" class="watch-link" data-i18n="btnWatchYt">YouTube'da İzle ↗</a>
             </div>
           </div>
         </div>
       </div>
 
       <div class="channel-cta">
-        <p>Daha fazla eğitici video ve güncel sağlık içerikleri için resmî kanalımızı takip edin.</p>
+        <p data-i18n="ytCtaText">Daha fazla eğitici video ve güncel sağlık içerikleri için resmî kanalımızı takip edin.</p>
         <a href="https://www.youtube.com/@DrCeyhunNuri" target="_blank" class="btn-youtube">
           <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-          YouTube Kanalımıza Abone Olun
+          <span data-i18n="btnYtSub">YouTube Kanalımıza Abone Olun</span>
         </a>
       </div>
     </div>
@@ -445,75 +449,75 @@
     <div class="container">
       <div class="appointment-card-wrapper">
         <div class="appointment-info">
-          <span class="badge badge-light">KİŞİYE ÖZEL PROTOKOL</span>
-          <h2>Bütüncül İyileşme Sürecinize İlk Adımı Atın</h2>
-          <p>Klinik değerlendirme randevunuz için formu doldurarak ön talep oluşturabilirsiniz. Asistanımız uygun saatleri teyit etmek için sizinle ivedilikle iletişime geçecektir.</p>
+          <span class="badge badge-light" data-i18n="appBadge">KİŞİYE ÖZEL PROTOKOL</span>
+          <h2 data-i18n="appHeading">Bütüncül İyileşme Sürecinize İlk Adımı Atın</h2>
+          <p data-i18n="appDesc">Klinik değerlendirme randevunuz için formu doldurarak ön talep oluşturabilirsiniz. Asistanımız uygun saatleri teyit etmek için sizinle ivedilikle iletişime geçecektir.</p>
           
           <div class="info-list">
             <div class="info-item">
               <span class="info-icon">📍</span>
               <div>
-                <strong>Klinik Lokasyonu</strong>
+                <strong data-i18n="locTitle">Klinik Lokasyonu</strong>
                 <p>Mustafa Kemal Mah. 2079. Sk. No: 21/C Çankaya / ANKARA</p>
               </div>
             </div>
             <div class="info-item">
               <span class="info-icon">📞</span>
               <div>
-                <strong>Doğrudan İletişim Hattı</strong>
+                <strong data-i18n="phoneTitle">Doğrudan İletişim Hattı</strong>
                 <p>+90 543 164 32 64</p>
               </div>
             </div>
             <div class="info-item">
               <span class="info-icon">⏱️</span>
               <div>
-                <strong>Klinik Çalışma Saatleri</strong>
-                <p>Pazartesi - Cumartesi: 09:30 - 18:30</p>
+                <strong data-i18n="hoursTitle">Klinik Çalışma Saatleri</strong>
+                <p data-i18n="hoursDesc">Pazartesi - Cumartesi: 09:30 - 18:30</p>
               </div>
             </div>
           </div>
         </div>
 
         <div class="appointment-form-box">
-          <h3>Online Randevu & Ön Bilgi Formu</h3>
-          <p class="form-desc">Lütfen bilgilerinizi eksiksiz doldurunuz.</p>
+          <h3 data-i18n="formTitle">Online Randevu & Ön Bilgi Formu</h3>
+          <p class="form-desc" data-i18n="formSub">Lütfen bilgilerinizi eksiksiz doldurunuz.</p>
           
           <form id="mainAppointmentForm">
             <div class="form-row">
               <div class="form-group">
-                <label>Adınız Soyadınız *</label>
+                <label data-i18n="lblFullName">Adınız Soyadınız *</label>
                 <input type="text" id="formName" placeholder="Ad Soyad" required>
               </div>
               <div class="form-group">
-                <label>Telefon Numaranız *</label>
-                <input type="tel" id="formPhone" placeholder="05XX XXX XX XX" required>
+                <label data-i18n="lblPhone">Telefon Numaranız *</label>
+                <input type="tel" id="formPhone" placeholder="+90 5XX XXX XX XX" required>
               </div>
             </div>
 
             <div class="form-row">
               <div class="form-group">
-                <label>İlgilendiğiniz Alan / Rahatsızlık</label>
+                <label data-i18n="lblCategory">İlgilendiğiniz Alan / Rahatsızlık</label>
                 <select id="formCategory">
-                  <option value="Genel Bütüncül Değerlendirme">Genel Bütüncül Değerlendirme</option>
-                  <option value="Ankilozan Spondilit & Romatizma">Ankilozan Spondilit & Romatizma</option>
-                  <option value="Bel ve Boyun Ağrıları / Fıtık">Bel ve Boyun Ağrıları / Fıtık</option>
-                  <option value="Fibromiyalji & Kronik Yorgunluk">Fibromiyalji & Kronik Yorgunluk</option>
-                  <option value="Fitoterapi & Beslenme Protokolü">Fitoterapi & Beslenme Protokolü</option>
-                  <option value="Osteopati & Manuel Terapi">Osteopati & Manuel Terapi</option>
+                  <option value="Genel Bütüncül Değerlendirme" data-i18n="opt1">Genel Bütüncül Değerlendirme</option>
+                  <option value="Ankilozan Spondilit & Romatizma" data-i18n="opt2">Ankilozan Spondilit & Romatizma</option>
+                  <option value="Bel ve Boyun Ağrıları / Fıtık" data-i18n="opt3">Bel ve Boyun Ağrıları / Fıtık</option>
+                  <option value="Fibromiyalji & Kronik Yorgunluk" data-i18n="opt4">Fibromiyalji & Kronik Yorgunluk</option>
+                  <option value="Fitoterapi & Beslenme Protokolü" data-i18n="opt5">Fitoterapi & Beslenme Protokolü</option>
+                  <option value="Osteopati & Manuel Terapi" data-i18n="opt6">Osteopati & Manuel Terapi</option>
                 </select>
               </div>
               <div class="form-group">
-                <label>Görüşmek İstediğiniz Tarih / Zaman</label>
+                <label data-i18n="lblTime">Görüşmek İstediğiniz Tarih / Zaman</label>
                 <input type="text" id="formDate" placeholder="Örn: Hafta içi öğleden sonra">
               </div>
             </div>
 
             <div class="form-group">
-              <label>Kısaca Şikayetiniz veya Notunuz</label>
+              <label data-i18n="lblNote">Kısaca Şikayetiniz veya Notunuz</label>
               <textarea id="formNote" rows="3" placeholder="Mevcut tanınız veya belirtileriniz..."></textarea>
             </div>
 
-            <button type="submit" class="btn-submit-main">
+            <button type="submit" class="btn-submit-main" data-i18n="btnSendWaApp">
               Randevu Talebini WhatsApp ile İlet ➔
             </button>
           </form>
@@ -529,42 +533,42 @@
         <div class="footer-col">
           <div class="footer-logo">
             <span class="doctor-title-white">DR. Ceyhun NURİ</span>
-            <span class="sub-title-white">BÜTÜNCÜL SAĞLIK KLİNİĞİ</span>
+            <span class="sub-title-white" data-i18n="footerSub">BÜTÜNCÜL SAĞLIK KLİNİĞİ</span>
           </div>
-          <p class="footer-desc">
+          <p class="footer-desc" data-i18n="footerDesc">
             Bütüncül hekimlik anlayışı, kök neden analizi ve kişiselleştirilmiş tedavi protokolleriyle sağlığınıza kalıcı çözümler.
           </p>
         </div>
 
         <div class="footer-col">
-          <h4 class="col-title">Hızlı Bağlantılar</h4>
+          <h4 class="col-title" data-i18n="fQuickLinks">Hızlı Bağlantılar</h4>
           <ul class="footer-links">
-            <li><a href="index.html">Ana Sayfa</a></li>
-            <li><a href="#hakkimizda">Hakkımızda & Yaklaşım</a></li>
-            <li><a href="#hastaliklar">Tedavi Edilen Hastalıklar</a></li>
-            <li><a href="#beslenme">Fitoterapi & Beslenme</a></li>
-            <li><a href="#iletisim">İletişim & Randevu</a></li>
+            <li><a href="index.html" data-i18n="navHome">Ana Sayfa</a></li>
+            <li><a href="#hakkimizda" data-i18n="navAbout">Hakkımızda & Yaklaşım</a></li>
+            <li><a href="#hastaliklar" data-i18n="navDiseases">Tedavi Edilen Hastalıklar</a></li>
+            <li><a href="#beslenme" data-i18n="navNutrition">Fitoterapi & Beslenme</a></li>
+            <li><a href="#iletisim" data-i18n="navContact">İletişim & Randevu</a></li>
           </ul>
         </div>
 
         <div class="footer-col address-col">
-          <h4 class="col-title">Klinik Adresi & İletişim</h4>
+          <h4 class="col-title" data-i18n="fAddressTitle">Klinik Adresi & İletişim</h4>
           <div class="contact-card">
             <div class="contact-row">
               <span class="c-icon">📍</span>
               <div>
-                <strong>Açık Adres:</strong>
+                <strong data-i18n="locTitle">Açık Adres:</strong>
                 <p>Mustafa Kemal Mah. 2079. Sk. No: 21/C<br>Çankaya / ANKARA</p>
               </div>
             </div>
             <div class="contact-row">
               <span class="c-icon">📞</span>
               <div>
-                <strong>Randevu & Bilgi:</strong>
+                <strong data-i18n="fPhoneInfo">Randevu & Bilgi:</strong>
                 <p>+90 543 164 32 64</p>
               </div>
             </div>
-            <a href="https://maps.google.com/?q=Mustafa+Kemal+Mah.+2079.+Sk.+No:21+Cankaya+Ankara" target="_blank" class="btn-map">
+            <a href="https://maps.google.com/?q=Mustafa+Kemal+Mah.+2079.+Sk.+No:21+Cankaya+Ankara" target="_blank" class="btn-map" data-i18n="btnDirections">
               🗺️ Haritada Yol Tarifi Al
             </a>
           </div>
@@ -572,7 +576,7 @@
       </div>
 
       <div class="footer-bottom">
-        <p>&copy; 2026 Dr. Ceyhun NURİ Sağlık Kurumu. Tüm hakları saklıdır.</p>
+        <p>&copy; 2026 Dr. Ceyhun NURİ Sağlık Kurumu. <span data-i18n="rights">Tüm hakları saklıdır.</span></p>
       </div>
     </div>
   </footer>
@@ -585,39 +589,39 @@
           <img src="images/logo.png" alt="Logo" class="wa-avatar" onerror="this.src='https://ui-avatars.com/api/?name=Dr+Ceyhun&background=0f3d32&color=fff'">
           <div>
             <strong>Dr. Ceyhun NURİ Kliniği</strong>
-            <span>Genellikle birkaç dakikada yanıt verir</span>
+            <span data-i18n="waReplyTime">Genellikle birkaç dakikada yanıt verir</span>
           </div>
         </div>
         <button class="wa-close-btn" id="waCloseBtn">&times;</button>
       </div>
 
       <div class="wa-box-body">
-        <p class="wa-hint">Randevu talebinizi ve müsait olduğunuz saati iletin, asistanımız hemen dönüş yapsın:</p>
+        <p class="wa-hint" data-i18n="waHint">Randevu talebinizi ve müsait olduğunuz saati iletin, asistanımız hemen dönüş yapsın:</p>
         
         <form id="waForm">
           <div class="wa-input-group">
-            <label>Adınız Soyadınız:</label>
-            <input type="text" id="waName" placeholder="Örn: Ahmet Yılmaz" required>
+            <label data-i18n="lblFullName">Adınız Soyadınız:</label>
+            <input type="text" id="waName" placeholder="Ad Soyad" required>
           </div>
 
           <div class="wa-input-group">
-            <label>Şikayetiniz / İlgilendiğiniz Tedavi:</label>
+            <label data-i18n="waLblService">Şikayetiniz / İlgilendiğiniz Tedavi:</label>
             <input type="text" id="waService" placeholder="Örn: Bel Ağrısı, Fitoterapi...">
           </div>
 
           <div class="wa-input-group">
-            <label>Görüşme İçin Müsait Olduğunuz Gün ve Saat:</label>
+            <label data-i18n="waLblTime">Görüşme İçin Müsait Olduğunuz Gün ve Saat:</label>
             <input type="text" id="waTime" placeholder="Örn: Pazartesi günü 14:00 - 16:00 arası" required>
           </div>
 
-          <button type="submit" class="wa-btn-submit">
+          <button type="submit" class="wa-btn-submit" data-i18n="btnWaSend">
             💬 WhatsApp ile Talebi Gönder
           </button>
         </form>
 
-        <div class="wa-divider"><span>VEYA</span></div>
+        <div class="wa-divider"><span data-i18n="orDivider">VEYA</span></div>
 
-        <a href="https://wa.me/905431643264" target="_blank" class="wa-btn-call">
+        <a href="https://wa.me/905431643264" target="_blank" class="wa-btn-call" data-i18n="btnDirectCall">
           📞 Doğrudan WhatsApp Hattını Ara / Yaz
         </a>
       </div>
@@ -627,7 +631,7 @@
       <svg viewBox="0 0 32 32" class="wa-icon-svg">
         <path fill="#ffffff" d="M16 2a13.9 13.9 0 0 0-12 21L2 30l7.2-1.9A13.9 13.9 0 1 0 16 2zm0 25.5a11.5 11.5 0 0 1-5.9-1.6l-.4-.3-4.3 1.1 1.2-4.2-.3-.4A11.6 11.6 0 1 1 16 27.5zm6.4-8.6c-.3-.2-2-.9-2.3-1-.3-.2-.5-.2-.7.2s-.8 1-1 1.2-.4.2-.7.1a9.2 9.2 0 0 1-4.8-4.2c-.4-.7.4-.6 1.1-2 .1-.3 0-.5-.1-.7s-.7-1.7-1-2.3c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4s-1.2 1.2-1.2 2.8 1.2 3.3 1.4 3.5 2.4 3.7 5.8 5.1c.8.4 1.5.6 2 .8.8.3 1.6.2 2.2.1.7-.1 2-.8 2.3-1.6.3-.8.3-1.5.2-1.6-.1-.2-.3-.3-.6-.5z"/>
       </svg>
-      <span class="wa-trigger-text">WhatsApp Randevu</span>
+      <span class="wa-trigger-text" data-i18n="waTrigger">WhatsApp Randevu</span>
     </button>
   </div>
 
@@ -637,14 +641,14 @@
       <div class="search-header">
         <div class="search-input-wrap">
           <span class="search-icon">🔍</span>
-          <input type="text" id="siteSearchInput" placeholder="Makale, video, kür veya hastalık ara... (Örn: Fibromiyalji, Bağırsak, Diz)" autocomplete="off">
+          <input type="text" id="siteSearchInput" placeholder="Makale, video veya tedavi arayın..." autocomplete="off">
           <button class="search-clear-btn" id="searchClearBtn">&times;</button>
         </div>
-        <button class="search-close-modal" id="searchCloseBtn">Kapat (ESC)</button>
+        <button class="search-close-modal" id="searchCloseBtn" data-i18n="searchClose">Kapat (ESC)</button>
       </div>
 
       <div class="search-quick-tags">
-        <span>Önerilenler:</span>
+        <span data-i18n="searchSuggested">Önerilenler:</span>
         <button class="q-tag" onclick="quickSearch('Fitoterapi')">🌿 Fitoterapi</button>
         <button class="q-tag" onclick="quickSearch('Bel Ağrısı')">🦴 Bel Fıtığı</button>
         <button class="q-tag" onclick="quickSearch('Mikrobiyota')">🦠 Mikrobiyota</button>
@@ -652,45 +656,566 @@
       </div>
 
       <div class="search-results-list" id="searchResults">
-        <div class="search-empty-state">Aramak istediğiniz konuyu yukarıya yazın.</div>
+        <div class="search-empty-state" data-i18n="searchEmpty">Aramak istediğiniz konuyu yukarıya yazın.</div>
       </div>
     </div>
   </div>
 
-  <!-- JAVASCRIPT ETKİLEŞİMLERİ -->
+  <!-- ÇOKLU DİL VE ETKİLEŞİM JAVASCRIPT MOTORU -->
   <script>
-    // 1. WhatsApp Randevu Pop-up
+    // === ÇOKLU DİL SÖZLÜĞÜ (TR, EN, DE) ===
+    const translations = {
+      tr: {
+        logoSub: "BÜTÜNCÜL TIP & SAĞLIKLI YAŞAM",
+        navHome: "Ana Sayfa",
+        navAbout: "Hakkımızda",
+        navDiseases: "#Hastalıklar",
+        d1: "Ankilozan Spondilit",
+        d2: "Romatoid Artrit",
+        d3: "Fibromiyalji",
+        d4: "Bel Ağrısı",
+        d5: "Boyun Ağrısı",
+        d6: "Diyabet",
+        navNutrition: "#Beslenme ve Fitoterapi",
+        navPhytoVid: "Fitoterapi Videoları",
+        navNutriCures: "Beslenme Kürleri",
+        navTreatments: "Tedaviler",
+        navOsteo: "Osteopati ve Uygulamalar",
+        navMechVid: "Mekanik Videolar",
+        navSelfTreat: "Kendi Kendinizi Tedavi Edin",
+        navHealth: "Genel Sağlık",
+        navHealthLife: "Sağlıklı Yaşam",
+        navAesthetic: "Estetik ve Güzellik",
+        navAntiAging: "Anti-aging",
+        navArticles: "Yazılar & Videolar",
+        navContact: "İletişim",
+        btnNavApp: "Randevu Al",
+        heroBadge: "🌿 BÜTÜNCÜL SAĞLIK YAKLAŞIMI",
+        heroTitle: "Sağlığınıza Bütüncül ve Kalıcı Çözüm",
+        heroDesc: "Hastalıkların semptomlarını baskılamak yerine vücudun biyolojik dengesini kök nedenleriyle yeniden kuran kişiye özel, bilimsel ve fonksiyonel tedavi protokolleri.",
+        heroBtnApp: "Online Randevu Talebi",
+        heroBtnTreat: "Tedavi Alanları",
+        aboutSubHeading: "BÜTÜNCÜL HEKİMLİK VİZYONU",
+        aboutTitle: "Dr. Ceyhun NURİ Sağlık Kliniği",
+        aboutIntro: "Dr. Ceyhun Nuri Sağlık Kurumunda hastaya yaklaşım teşhis ve tedavi olmak üzere iki temel bölümden oluşmaktadır.",
+        stat1: "Yıllık Klinik Tecrübe",
+        stat2: "Danışan & Hasta Takibi",
+        stat3: "Bilimsel Video & Makale",
+        part1Badge: "BÖLÜM 1",
+        part1Title: "Teşhis ve Beden Göstergeleri",
+        part1Intro: "Teşhis aşaması, öncelikle bildiğiniz şekliyle mutlaka kişinin laboratuvar ve görüntüleme tetkiklerinin değerlendirmesiyle başlar. Bundan sonraki aşamada beden belirtilerini tanımamıza yardım edecek iki ana teşhis-tespit yoluna başvurulmaktadır:",
+        step1Title: "Kas-İskelet ve Biyomekanik Analiz:",
+        step1Desc: "Kas iskelet sisteminin iç organlar üzerine veya aksi yönde etkisini tespit edebilmek için postür analizi, ayak bası analizi, omurga-kalçanın biyomekaniği osteopati anlayışı çerçevesinde değerlendirilir.",
+        step2Title: "Metabolik ve Mikrosistem Analizi:",
+        step2Desc: "Organların metabolik durumları hakkında bilgi edinmek için, vücut pH ölçümü, kulak mikrosistem tarama, dil üzerinden teşhis, meridyen-enerji kanal taraması ve osteopatik değerlendirme yapılır.",
+        part1Quote: "Kullandığımız bu teknoloji ve yöntemler; vücut mikrosistemlerini, ısısını, enerjisini ve biyomekaniğini kullanarak henüz laboratuvar tetkiklerine yansımayan kronik rahatsızlıkların dahi tespit edilmesinde çok ciddi bir olanak sağlamaktadır.",
+        part1Note: "Her biri alanında tecrübe sahibi ekibimizle birlikte tedavi planlaması yaparken; kadimden gelen bilgiler ve güncel tıp anlayışı içinde hastaya özel reçete hazırlanmasını esas hedef olarak görürüz.",
+        part2Badge: "BÖLÜM 2",
+        part2Title: "Tedavi Alanı ve Enstrümanlar",
+        part2Intro: "Kliniğin ikinci bölümü tedavi alanından oluşmaktadır. Bu alanda hastaya özgü ana tedavi protokolüne destek olarak modern ve bütüncül enstrümanlar uygulanmaktadır.",
+        warnTitle: "ANCAK UNUTULMAMALIDIR Kİ;",
+        warnDesc: "Bütün bu uygulamalar tekil olarak hastalarda istenen sonucu doğurmayabilir. Çünkü bunlar tek başına birer enstrümandır. Başarıyı yakalayan; hastanın kök nedenine göre bunlardan doğru sentez ve kombinasyonları oluşturan HEKİMLİK BİLİNCİDİR.",
+        disBadge: "UZMANLIK ALANLARI",
+        disHeading: "Semptomları Değil, Kök Nedeni İyileştiriyoruz",
+        disSub: "Kronik ağrı ve inflamasyon süreçlerinde hücresel ve biyomekanik temelli tedavi yaklaşımı.",
+        cardD1Title: "Ankilozan Spondilit",
+        cardD1Desc: "Omurga sertliği ve sabah tutukluklarında; bağırsak geçirgenliği, mikrobiyota düzenlemesi ve osteopatik postür desteği.",
+        cardD2Title: "Romatoid Artrit",
+        cardD2Desc: "Eklem iltihaplarını baskılamak yerine immün toleransı yeniden kazandıran fitoterapi ve hücresel detoks yaklaşımları.",
+        cardD3Title: "Fibromiyalji & Kronik Yorgunluk",
+        cardD3Desc: "Mitokondriyal enerji düşüklüğü, uyku kalitesi ve kronik yaygın kas ağrılarına bütüncül mikrosistem müdahalesi.",
+        cardD4Title: "Bel & Boyun Fıtığı / Ağrıları",
+        cardD4Desc: "Fıtık ve kireçlenmelerde omurga biyomekaniğini düzelten kayropraksi, osteopati ve hedefe yönelik kuru iğneleme.",
+        cardD5Title: "Diyabet & İnsülin Direnci",
+        cardD5Desc: "Kişiye özel beslenme kürleri, pH dengesi ve doku yenilenmesini destekleyen damar içi (I.V.) protokoller.",
+        cardD6Title: "Geçirgen Bağırsak & SIBO",
+        cardD6Desc: "Bağışıklığın %70'ini yöneten bağırsak florasını onararak tüm otoimmün tetikleyicileri kaynağında durdurma.",
+        btnReviewProto: "Tedavi Protokolünü İncele →",
+        treatBadge: "KLİNİK UYGULAMALAR",
+        treatHeading: "Kadim Tıp ve Modern Teknolojinin Sentezi",
+        treatSub: "Hekimlik tecrübesiyle doğru kombinlenen, hücre yenilenmesini ve mekanik dengeyi sağlayan tedavi yöntemleri.",
+        t1Badge: "Biyomekanik",
+        t1Title: "Osteopati & Manuel Terapi",
+        t1Desc: "Omurga, eklem ve fasyal kısıtlılıkları elle uygulanan hassas tekniklerle çözerek sinir iletimini ve dolaşımı optimize eder.",
+        t1F1: "Postür ve Ayak Bası Dengeleme",
+        t1F2: "Fasyal ve Kranio-Sakral Rahatlama",
+        t1F3: "Bel, Boyun ve Sırt Blokajları",
+        t2Badge: "Biyokimya",
+        t2Title: "Fitoterapi & Kişiye Özel Kürler",
+        t2Desc: "Standardize edilmiş tıbbi bitkisel özlerle hücresel detoksifikasyon, inflamasyon kontrolü ve bağırsak onarımı sağlanır.",
+        t2F1: "Hedefe Yönelik Bitkisel Ekstreler",
+        t2F2: "Bağırsak Mikrobiyota Düzenlemesi",
+        t2F3: "Metabolik Denge ve pH Desteği",
+        t3Badge: "Yüksek Teknoloji",
+        t3Title: "Robotik Lazer & Manyetik Alan",
+        t3Desc: "Derin dokulara inen fotobiyomodülasyon ile hücresel ATP üretimini tetikler, kıkırdak ve tendon rejenerasyonunu hızlandırır.",
+        t3F1: "Ağrısız & İğnesiz Doku Onarımı",
+        t3F2: "Kronik Ödem ve Enflamasyon Tasfiyesi",
+        t3F3: "Hücre Yenilenmesini Hızlandırma",
+        t4Badge: "Rejeneratif",
+        t4Title: "PRP & Proloterapi",
+        t4Desc: "Eklemlere ve tendonlara uygulanan doğal onarıcı enjeksiyonlarla vücudun kendi tamir mekanizmasını başlatır.",
+        t4F1: "Eklem Sıvısı ve Kıkırdak Takviyesi",
+        t4F2: "Bağ Dokusu Sıkılaştırma",
+        t4F3: "Kireçlenme ve Menisküs Protokolleri",
+        t5Badge: "Geleneksel & Tamamlayıcı",
+        t5Title: "Medikal Ozon & Akupunktur",
+        t5Desc: "Doku oksijenlenmesini maksimuma çıkarırken meridyen enerji hatlarını regüle ederek sinir sistemi dengesini kurar.",
+        t5F1: "Major & Lokal Medikal Ozon",
+        t5F2: "Meridyen Taraması Destekli Akupunktur",
+        t5F3: "Bağışıklık Güçlendirme",
+        t6Badge: "Hücresel Beslenme",
+        t6Title: "I.V. Serum & Mineral İnfüzyonu",
+        t6Desc: "Sindirim sistemini baypas ederek damar yoluyla doğrudan hücreye ulaşan iz element, mineral ve antioksidan protokolleri.",
+        t6F1: "Mitokondriyal Enerji ve Canlılık",
+        t6F2: "Ağır Metal ve Toksin Arınması",
+        t6F3: "Kişiselleştirilmiş Serum Karışımları",
+        bannerTitle: "Hangi Tedavi Kombinasyonuna İhtiyacınız Var?",
+        bannerDesc: "Kliniğimizde ezbere protokol uygulanmaz. Önce mikrosistem ve biyomekanik taramanız yapılır, ardından hekiminiz size özel sentezi oluşturur.",
+        btnConsultDoc: "Doktora Danışın",
+        mediaBadge: "EĞİTİCİ İÇERİKLER & VİDEOLAR",
+        mediaHeading: "Hekiminizden Sağlık Rehberi",
+        mediaSub: "Fitoterapi kürleri, mekanik egzersizler ve bütüncül sağlık ipuçlarıyla doğru bilgiye ilk elden ulaşın.",
+        fAll: "Tüm İçerikler",
+        fPhyto: "Fitoterapi Kürleri",
+        fMech: "Mekanik & Egzersiz",
+        fGuide: "Hastalık Rehberi",
+        v1Title: "Bağırsak Geçirgenliğini Onaran Doğal Kür Protokolü",
+        v1Desc: "Geçirgen bağırsak ve mikrobiyota dengesizliklerinde kullanılan standardize bitkisel ekstreler ve beslenme tüyoları.",
+        v2Title: "Bel ve Boyun Fıtığında Evde Rahatlatma Teknikleri",
+        v2Desc: "Omurga mekaniğini rahatlatan fasyal gevşeme hareketleri ve kendi kendinize uygulayabileceğiniz duruş egzersizleri.",
+        v3Title: "Fibromiyalji ve Kronik Yorgunluğun Kök Nedenleri",
+        v3Desc: "Ağrının sadece kaslarda değil; hücresel enerji açığı, asidoz ve meridyen blokajlarıyla ilişkisi.",
+        btnWatchYt: "YouTube'da İzle ↗",
+        ytCtaText: "Daha fazla eğitici video ve güncel sağlık içerikleri için resmî kanalımızı takip edin.",
+        btnYtSub: "YouTube Kanalımıza Abone Olun",
+        appBadge: "KİŞİYE ÖZEL PROTOKOL",
+        appHeading: "Bütüncül İyileşme Sürecinize İlk Adımı Atın",
+        appDesc: "Klinik değerlendirme randevunuz için formu doldurarak ön talep oluşturabilirsiniz. Asistanımız uygun saatleri teyit etmek için sizinle iletişime geçecektir.",
+        locTitle: "Klinik Lokasyonu",
+        phoneTitle: "Doğrudan İletişim Hattı",
+        hoursTitle: "Klinik Çalışma Saatleri",
+        hoursDesc: "Pazartesi - Cumartesi: 09:30 - 18:30",
+        formTitle: "Online Randevu & Ön Bilgi Formu",
+        formSub: "Lütfen bilgilerinizi eksiksiz doldurunuz.",
+        lblFullName: "Adınız Soyadınız *",
+        lblPhone: "Telefon Numaranız *",
+        lblCategory: "İlgilendiğiniz Alan / Rahatsızlık",
+        opt1: "Genel Bütüncül Değerlendirme",
+        opt2: "Ankilozan Spondilit & Romatizma",
+        opt3: "Bel ve Boyun Ağrıları / Fıtık",
+        opt4: "Fibromiyalji & Kronik Yorgunluk",
+        opt5: "Fitoterapi & Beslenme Protokolü",
+        opt6: "Osteopati & Manuel Terapi",
+        lblTime: "Görüşmek İstediğiniz Tarih / Zaman",
+        lblNote: "Kısaca Şikayetiniz veya Notunuz",
+        btnSendWaApp: "Randevu Talebini WhatsApp ile İlet ➔",
+        footerSub: "BÜTÜNCÜL SAĞLIK KLİNİĞİ",
+        footerDesc: "Bütüncül hekimlik anlayışı, kök neden analizi ve kişiselleştirilmiş tedavi protokolleriyle sağlığınıza kalıcı çözümler.",
+        fQuickLinks: "Hızlı Bağlantılar",
+        fAddressTitle: "Klinik Adresi & İletişim",
+        fPhoneInfo: "Randevu & Bilgi:",
+        btnDirections: "🗺️ Haritada Yol Tarifi Al",
+        rights: "Tüm hakları saklıdır.",
+        waReplyTime: "Genellikle birkaç dakikada yanıt verir",
+        waHint: "Randevu talebinizi ve müsait olduğunuz saati iletin, asistanımız hemen dönüş yapsın:",
+        waLblService: "Şikayetiniz / İlgilendiğiniz Tedavi:",
+        waLblTime: "Müsait Olduğunuz Gün ve Saat:",
+        btnWaSend: "💬 WhatsApp ile Talebi Gönder",
+        orDivider: "VEYA",
+        btnDirectCall: "📞 Doğrudan WhatsApp Hattını Ara / Yaz",
+        waTrigger: "WhatsApp Randevu",
+        searchClose: "Kapat (ESC)",
+        searchSuggested: "Önerilenler:",
+        searchEmpty: "Aramak istediğiniz konuyu yukarıya yazın."
+      },
+      en: {
+        logoSub: "HOLISTIC MEDICINE & WELLNESS CLINIC",
+        navHome: "Home",
+        navAbout: "About Us",
+        navDiseases: "#Diseases",
+        d1: "Ankylosing Spondylitis",
+        d2: "Rheumatoid Arthritis",
+        d3: "Fibromyalgia",
+        d4: "Low Back Pain",
+        d5: "Neck Pain",
+        d6: "Diabetes",
+        navNutrition: "#Nutrition & Phytotherapy",
+        navPhytoVid: "Phytotherapy Videos",
+        navNutriCures: "Nutrition Protocols",
+        navTreatments: "Treatments",
+        navOsteo: "Osteopathy & Practice",
+        navMechVid: "Biomechanics Videos",
+        navSelfTreat: "Self-Care Exercises",
+        navHealth: "General Health",
+        navHealthLife: "Healthy Living",
+        navAesthetic: "Medical Aesthetics",
+        navAntiAging: "Anti-Aging & Longevity",
+        navArticles: "Articles & Videos",
+        navContact: "Contact",
+        btnNavApp: "Book Appointment",
+        heroBadge: "🌿 HOLISTIC HEALTH APPROACH",
+        heroTitle: "Holistic & Lasting Solutions for Your Health",
+        heroDesc: "Scientific, personalized, and functional medicine protocols addressing root causes rather than just suppressing disease symptoms.",
+        heroBtnApp: "Request Online Appointment",
+        heroBtnTreat: "Treatment Areas",
+        aboutSubHeading: "HOLISTIC MEDICINE VISION",
+        aboutTitle: "Dr. Ceyhun NURİ Wellness Clinic",
+        aboutIntro: "In our clinic, the approach to every patient is built on two core pillars: Comprehensive Diagnosis and Personalized Treatment.",
+        stat1: "Years of Clinical Practice",
+        stat2: "Treated Patients & Clients",
+        stat3: "Scientific Articles & Videos",
+        part1Badge: "PART 1",
+        part1Title: "Diagnosis & Body Biomarkers",
+        part1Intro: "The diagnostic process starts with evaluating detailed imaging and laboratory tests, followed by physical and energetic assessments:",
+        step1Title: "Musculoskeletal & Biomechanical Analysis:",
+        step1Desc: "Evaluating posture, gait, pelvic and spinal mechanics through osteopathic medicine to inspect organ-skeletal interactions.",
+        step2Title: "Metabolic & Microsystem Analysis:",
+        step2Desc: "Examining body pH balance, ear acupuncture microsystem scan, tongue diagnosis, and meridian energy check-up by an Osteopath Physician.",
+        part1Quote: "By assessing thermal, cellular, and biomechanical indicators, this holistic diagnostic framework detects systemic chronic imbalances before they even surface on routine blood tests.",
+        part1Note: "Together with our experienced multidisciplinary medical team, we formulate tailored remedies combining ancient therapeutic wisdom with modern clinical evidence.",
+        part2Badge: "PART 2",
+        part2Title: "Therapeutic Modalities & Instruments",
+        part2Intro: "The treatment wing is equipped with modern holistic modalities to assist the patient's individual healing protocol.",
+        warnTitle: "PLEASE KEEP IN MIND;",
+        warnDesc: "These modalities alone are merely scientific instruments. True clinical success stems from the DOCTOR'S CLINICAL MASTERY in choosing the precise combination tailored to the root cause.",
+        disBadge: "SPECIALIZATIONS",
+        disHeading: "Healing the Root Cause, Not Just the Symptoms",
+        disSub: "Cellular and biomechanical therapeutic approach to chronic inflammation and systemic disorders.",
+        cardD1Title: "Ankylosing Spondylitis",
+        cardD1Desc: "Addressing spinal stiffness and morning rigidity via gut flora repair, anti-inflammatory phytotherapy, and osteopathy.",
+        cardD2Title: "Rheumatoid Arthritis",
+        cardD2Desc: "Re-establishing immune tolerance with phytotherapy and cellular detox protocols instead of purely masking joint inflammation.",
+        cardD3Title: "Fibromyalgia & Chronic Fatigue",
+        cardD3Desc: "Restoring mitochondrial ATP production, sleep quality, and resolving myofascial trigger points through holistic interventions.",
+        cardD4Title: "Herniated Disc & Spinal Pain",
+        cardD4Desc: "Rebalancing vertebral alignment with chiropractic care, osteopathy, and targeted medical dry needling.",
+        cardD5Title: "Diabetes & Insulin Resistance",
+        cardD5Desc: "Personalized nutrition regimes, tissue pH balancing, and intravenous (I.V.) cellular regeneration infusions.",
+        cardD6Title: "Leaky Gut Syndrome & SIBO",
+        cardD6Desc: "Repairing the intestinal mucosal barrier to halt systemic autoimmune cascades at their true origin.",
+        btnReviewProto: "Explore Treatment Protocol →",
+        treatBadge: "CLINICAL APPLICATIONS",
+        treatHeading: "Synthesis of Ancient Medicine and High Technology",
+        treatSub: "Synergistic therapies combined with clinical precision to support cellular renewal and biomechanical equilibrium.",
+        t1Badge: "Biomechanics",
+        t1Title: "Osteopathy & Manual Therapy",
+        t1Desc: "Resolves fascial and articular restrictions with precise manual techniques to restore neural flow and internal circulation.",
+        t1F1: "Postural & Gait Recalibration",
+        t1F2: "Craniosacral & Visceral Mobility",
+        t1F3: "Spinal & Cervical Decompression",
+        t2Badge: "Biochemistry",
+        t2Title: "Phytotherapy & Herbal Prescriptions",
+        t2Desc: "Standardized medicinal botanical extracts for cellular detoxification, inflammation modulation, and gut barrier integrity.",
+        t2F1: "Standardized Botanical Extracts",
+        t2F2: "Microbiome Flora Optimization",
+        t2F3: "Metabolic and pH Balance",
+        t3Badge: "High Technology",
+        t3Title: "Robotic Laser & Pulsed Magnetics",
+        t3Desc: "High-intensity photobiomodulation stimulating mitochondrial ATP synthesis to accelerate tendon and cartilage repair.",
+        t3F1: "Painless & Non-Invasive Tissue Repair",
+        t3F2: "Edema & Inflammation Clearance",
+        t3F3: "Accelerated Cellular Regeneration",
+        t4Badge: "Regenerative",
+        t4Title: "PRP & Prolotherapy",
+        t4Desc: "Natural regenerative biological injections triggering self-healing pathways in ligaments, tendons, and cartilage.",
+        t4F1: "Joint Fluid & Cartilage Nourishment",
+        t4F2: "Ligamentous Strengthening",
+        t4F3: "Meniscus & Osteoarthritis Protocols",
+        t5Badge: "Traditional & Complementary",
+        t5Title: "Medical Ozone & Acupuncture",
+        t5Desc: "Maximizes tissue oxygenation while regulating autonomic nervous system balance via meridian energetics.",
+        t5F1: "Major & Minor Autohemotherapy",
+        t5F2: "Meridian-Guided Acupuncture",
+        t5F3: "Immune System Potentiation",
+        t6Badge: "Cellular Nutrition",
+        t6Title: "I.V. Infusions & Micronutrients",
+        t6Desc: "Intravenous essential trace elements, high-dose antioxidants, and minerals bypassing the digestive tract directly into cells.",
+        t6F1: "Mitochondrial Energy & Stamina",
+        t6F2: "Heavy Metal & Toxin Cleansing",
+        t6F3: "Customized Intravenous Cocktails",
+        bannerTitle: "Which Treatment Combination Do You Need?",
+        bannerDesc: "We do not believe in cookie-cutter protocols. Following an in-depth biomechanical and metabolic assessment, your physician builds your bespoke protocol.",
+        btnConsultDoc: "Consult the Physician",
+        mediaBadge: "EDUCATIONAL RESOURCES",
+        mediaHeading: "Health Insights from Your Doctor",
+        mediaSub: "Gain direct access to verified clinical knowledge: phytotherapy cures, physical exercises, and holistic living tips.",
+        fAll: "All Content",
+        fPhyto: "Phytotherapy Cures",
+        fMech: "Exercise & Mechanics",
+        fGuide: "Disease Handbook",
+        v1Title: "Natural Botanical Protocol for Leaky Gut",
+        v1Desc: "Standardized herbal extracts and dietary recommendations used for intestinal hyperpermeability and dysbiosis.",
+        v2Title: "At-Home Exercises for Cervical and Lumbar Hernia",
+        v2Desc: "Fascial release exercises and postural realignment techniques you can safely practice at home.",
+        v3Title: "The Hidden Root Causes of Fibromyalgia",
+        v3Desc: "Why chronic pain is deeply linked with mitochondrial energy depletion, tissue acidosis, and meridian blockages.",
+        btnWatchYt: "Watch on YouTube ↗",
+        ytCtaText: "Subscribe to our official channel for clinical lectures and holistic health guidelines.",
+        btnYtSub: "Subscribe on YouTube",
+        appBadge: "PERSONALIZED PROTOCOL",
+        appHeading: "Take Your First Step Towards Holistic Healing",
+        appDesc: "Fill out the consultation form to schedule an initial clinical evaluation. Our clinic coordinator will promptly contact you.",
+        locTitle: "Clinic Location",
+        phoneTitle: "Direct Contact Line",
+        hoursTitle: "Working Hours",
+        hoursDesc: "Monday - Saturday: 09:30 - 18:30",
+        formTitle: "Online Appointment & Inquiry Form",
+        formSub: "Please fill in your details accurately.",
+        lblFullName: "Full Name *",
+        lblPhone: "Phone Number *",
+        lblCategory: "Area of Interest / Condition",
+        opt1: "General Holistic Assessment",
+        opt2: "Ankylosing Spondylitis & Rheumatism",
+        opt3: "Spinal, Back & Neck Pain / Hernia",
+        opt4: "Fibromyalgia & Chronic Fatigue",
+        opt5: "Phytotherapy & Nutritional Protocol",
+        opt6: "Osteopathy & Manual Therapy",
+        lblTime: "Preferred Date & Time",
+        lblNote: "Short Note / Current Symptoms",
+        btnSendWaApp: "Send Appointment Request via WhatsApp ➔",
+        footerSub: "HOLISTIC HEALTH CLINIC",
+        footerDesc: "Lasting healthcare solutions driven by functional medical vision, root-cause diagnosis, and tailored treatment synthesis.",
+        fQuickLinks: "Quick Navigation",
+        fAddressTitle: "Clinic Location & Contact",
+        fPhoneInfo: "Appointments & Info:",
+        btnDirections: "🗺️ Get Directions on Google Maps",
+        rights: "All rights reserved.",
+        waReplyTime: "Typically replies within a few minutes",
+        waHint: "Leave your appointment request and convenient time, our assistant will get back to you:",
+        waLblService: "Concern / Desired Treatment:",
+        waLblTime: "Convenient Day and Time:",
+        btnWaSend: "💬 Submit Request via WhatsApp",
+        orDivider: "OR",
+        btnDirectCall: "📞 Call / Message WhatsApp Hotline",
+        waTrigger: "WhatsApp Appointment",
+        searchClose: "Close (ESC)",
+        searchSuggested: "Suggested:",
+        searchEmpty: "Type a topic or illness above to search..."
+      },
+      de: {
+        logoSub: "GANZHEITLICHE MEDIZIN & GESUNDHEITSKLINIK",
+        navHome: "Startseite",
+        navAbout: "Über uns",
+        navDiseases: "#Krankheiten",
+        d1: "Morbus Bechterew",
+        d2: "Rheumatoide Arthritis",
+        d3: "Fibromyalgie",
+        d4: "Rückenschmerzen",
+        d5: "Nackenschmerzen",
+        d6: "Diabetes",
+        navNutrition: "#Ernährung & Phytotherapie",
+        navPhytoVid: "Phytotherapie-Videos",
+        navNutriCures: "Ernährungskuren",
+        navTreatments: "Behandlungen",
+        navOsteo: "Osteopathie & Anwendungen",
+        navMechVid: "Biomechanik-Videos",
+        navSelfTreat: "Selbstbehandlung & Übungen",
+        navHealth: "Allgemeine Gesundheit",
+        navHealthLife: "Gesunder Lebensstil",
+        navAesthetic: "Medizinische Ästhetik",
+        navAntiAging: "Anti-Aging & Langlebigkeit",
+        navArticles: "Artikel & Videos",
+        navContact: "Kontakt",
+        btnNavApp: "Termin Buchen",
+        heroBadge: "🌿 GANZHEITLICHE GESUNDHEIT",
+        heroTitle: "Ganzheitliche und Nachhaltige Lösungen für Ihre Gesundheit",
+        heroDesc: "Wissenschaftliche, personalisierte Behandlungsprotokolle, die biologische Ursachen kurieren, anstatt bloße Krankheitssymptome zu unterdrücken.",
+        heroBtnApp: "Online-Terminanfrage",
+        heroBtnTreat: "Behandlungsbereiche",
+        aboutSubHeading: "GANZHEITLICHE VISION",
+        aboutTitle: "Dr. Ceyhun NURİ Gesundheitsklinik",
+        aboutIntro: "In unserer Klinik gliedert sich die Patientenbetreuung in zwei fundamentale Schritte: Präzise Ursachendiagnostik und individuelle Therapie.",
+        stat1: "Jahre Klinische Erfahrung",
+        stat2: "Erfolgreich Betreute Patienten",
+        stat3: "Wissenschaftliche Publikationen",
+        part1Badge: "TEIL 1",
+        part1Title: "Diagnostik & Körpersignale",
+        part1Intro: "Neben der Auswertung von Labor- und Bildgebungsverfahren setzen wir auf zwei ganzheitliche Diagnosepfade zur Ermittlung verdeckter Ursachen:",
+        step1Title: "Bewegungsapparat & Biomechanische Analyse:",
+        step1Desc: "Haltungs- und Ganganalyse sowie osteopathische Überprüfung der Wirbelsäulenmechanik zur Feststellung von Organ-Skelett-Wechselwirkungen.",
+        step2Title: "Stoffwechsel- & Mikrosystemanalyse:",
+        step2Desc: "Körper-pH-Messung, Ohrakupunktur-Scan, Zungendiagnostik, Meridian-Screening und osteopathische Untersuchung durch den Facharzt.",
+        part1Quote: "Durch die Erfassung von thermischen, energetischen und biomechanischen Mikrosystemen können chronische Funktionsstörungen erkannt werden, lange bevor sie in Standard-Laborwerten sichtbar sind.",
+        part1Note: "Gemeinsam mit unserem multidisziplinären Team verbinden wir jahrhundertealtes Heilwissen mit moderner evidenzbasierter Schulmedizin.",
+        part2Badge: "TEIL 2",
+        part2Title: "Therapiefelder & Instrumente",
+        part2Intro: "Der Behandlungsbereich umfasst modernste ganzheitliche Methoden, die individuell zu einem maßgeschneiderten Heilungsplan kombiniert werden.",
+        warnTitle: "BITTE BEACHTEN SIE;",
+        warnDesc: "Jede Methode ist für sich genommen nur ein wissenschaftliches Werkzeug. Der wahre Heilungserfolg entsteht durch die ÄRZTLICHE KOMPETENZ, die exakte Synthese für die Ursache zu finden.",
+        disBadge: "FACHGEBIETE",
+        disHeading: "Wir heilen die Ursache, nicht nur die Symptome",
+        disSub: "Zellulärer und biomechanischer Therapieansatz bei chronischen Schmerzen und Entzündungen.",
+        cardD1Title: "Morbus Bechterew",
+        cardD1Desc: "Wirbelsäulensteifigkeit und Morgensteifigkeit durch Darmsanierung, Mikrobiom-Regulierung und osteopathische Haltungskorrektur lindern.",
+        cardD2Title: "Rheumatoide Arthritis",
+        cardD2Desc: "Wiederherstellung der Immuntoleranz durch gezielte Phytotherapie und Zellerneuerung statt reiner Schmerzunterdrückung.",
+        cardD3Title: "Fibromyalgie & Chronische Müdigkeit",
+        cardD3Desc: "Behandlung von zellulärem Energiemangel (ATP), Schlafqualität und Myofaszialschmerz durch Mikrosystem-Therapien.",
+        cardD4Title: "Bandscheibenvorfall & Rückenschmerz",
+        cardD4Desc: "Biomechanische Justierung der Wirbelsäule durch Chiropraktik, Osteopathie und gezieltes Dry Needling.",
+        cardD5Title: "Diabetes & Insulinresistenz",
+        cardD5Desc: "Personalisierte Ernährungskuren, Gewebe-pH-Ausgleich und intravenöse (I.V.) Zellerneuerungsinfusionen.",
+        cardD6Title: "Leaky-Gut-Syndrom & SIBO",
+        cardD6Desc: "Reparatur der Darmbarriere zur Beseitigung der Auslöser von Autoimmunreaktionen direkt an der Wurzel.",
+        btnReviewProto: "Therapieprotokoll Einsehen →",
+        treatBadge: "KLINISCHE ANWENDUNGEN",
+        treatHeading: "Synthese aus Traditioneller Heilkunde und Spitzentechnologie",
+        treatSub: "Synergistische Verfahren zur Förderung der Zellregeneration und Wiederherstellung der biomechanischen Balance.",
+        t1Badge: "Biomechanik",
+        t1Title: "Osteopathie & Manuelle Therapie",
+        t1Desc: "Löst fasziale und artikuläre Blockaden durch feinfühlige Grifftechniken zur Optimierung von Nervenleitung und Durchblutung.",
+        t1F1: "Haltungs- und Fußdruckkorrektur",
+        t1F2: "Kraniosakrale & Viszerale Entlastung",
+        t1F3: "Wirbelsäulen- und Nackenblockaden",
+        t2Badge: "Biochemie",
+        t2Title: "Phytotherapie & Heilpflanzenkuren",
+        t2Desc: "Standardisierte pflanzliche Extrakte für zelluläre Entgiftung, Entzündungshemmung und Wiederaufbau der Darmschleimhaut.",
+        t2F1: "Standardisierte Pflanzenextrakte",
+        t2F2: "Regulierung des Darm-Mikrobioms",
+        t2F3: "Metabolische & pH-Stabilisierung",
+        t3Badge: "Spitzentechnologie",
+        t3Title: "Roboter-Laser & Magnetfeldtherapie",
+        t3Desc: "Tiefenwirksame Photobiomodulation regt die zelluläre ATP-Produktion an und beschleunigt Knorpel- und Sehnenerholung.",
+        t3F1: "Schmerzfreie, nadellose Gewebereparatur",
+        t3F2: "Abbau chronischer Ödeme & Entzündungen",
+        t3F3: "Gesteigerte zelluläre Regeneration",
+        t4Badge: "Regenerativ",
+        t4Title: "PRP & Prolotherapie",
+        t4Desc: "Biologische Injektionen zur Anregung körpereigener Reparaturprozesse bei Sehnen-, Bänder- und Knorpelverschleiß.",
+        t4F1: "Gelenkflüssigkeits- und Knorpelnahrung",
+        t4F2: "Straffung des Bandapparates",
+        t4F3: "Arthrose- & Meniskusprotokolle",
+        t5Badge: "Traditionell & Komplementär",
+        t5Title: "Medizinisches Ozon & Akupunktur",
+        t5Desc: "Maximiert die Gewebeoxygenierung und harmonisiert das vegetative Nervensystem über Meridian-Leitbahnen.",
+        t5F1: "Große & Lokale Eigenblut-Ozontherapie",
+        t5F2: "Meridiangestützte Akupunktur",
+        t5F3: "Immunologische Kräftigung",
+        t6Badge: "Zelluläre Ernährung",
+        t6Title: "I.V. Infusionen & Mikronährstoffe",
+        t6Desc: "Intravenöse Gabe essenzieller Spurenelemente und Hochdosis-Antioxidantien unter Umgehung des Verdauungstraktes.",
+        t6F1: "Mitochondriale Energie & Vitalität",
+        t6F2: "Schwermetall- und Schadstoffausleitung",
+        t6F3: "Individuelle Infusionsrezepturen",
+        bannerTitle: "Welche Therapiekombination Benötigen Sie?",
+        bannerDesc: "Bei uns gibt es keine Standardtherapien von der Stange. Nach ganzheitlicher Untersuchung stellt Ihr Arzt Ihre persönliche Synthese zusammen.",
+        btnConsultDoc: "Arzt Konsultieren",
+        mediaBadge: "WISSENSWERTES & VIDEOS",
+        mediaHeading: "Gesundheitsratgeber Ihres Arztes",
+        mediaSub: "Fundiertes medizinisches Wissen: Phytotherapie-Kuren, Bewegungsübungen und wertvolle Tipps für ein gesundes Leben.",
+        fAll: "Alle Inhalte",
+        fPhyto: "Phytotherapie-Kuren",
+        fMech: "Mechanik & Bewegung",
+        fGuide: "Krankheitsratgeber",
+        v1Title: "Pflanzliches Kur-Protokoll bei Leaky-Gut",
+        v1Desc: "Wissenschaftlich erprobte Pflanzenextrakte und Ernährungstipps bei durchlässigem Darm und Fehlbesiedlung.",
+        v2Title: "Entlastungsübungen bei Bandscheibenvorfall für zu Hause",
+        v2Desc: "Fasziale Entspannungsübungen und Haltungskorrekturen, die Sie eigenständig durchführen können.",
+        v3Title: "Die Verborgenen Ursachen der Fibromyalgie",
+        v3Desc: "Zusammenhänge chronischer Schmerzen mit mitochondrialem Energiemangel, Übersäuerung und Meridianblockaden.",
+        btnWatchYt: "Auf YouTube Ansehen ↗",
+        ytCtaText: "Abonnieren Sie unseren offiziellen YouTube-Kanal für regelmäßige medizinische Fachbeiträge.",
+        btnYtSub: "Auf YouTube Abonnieren",
+        appBadge: "INDIVIDUELLES PROTOKOLL",
+        appHeading: "Der Erste Schritt zu Ihrer Ganzheitlichen Genesung",
+        appDesc: "Füllen Sie das Formular für eine klinische Erstkonsultation aus. Unsere Praxiskoordination wird sich umgehend mit Ihnen in Verbindung setzen.",
+        locTitle: "Klinikstandort",
+        phoneTitle: "Direkter Telefonkontakt",
+        hoursTitle: "Öffnungszeiten",
+        hoursDesc: "Montag - Samstag: 09:30 - 18:30 Uhr",
+        formTitle: "Online-Termin- & Vorab-Formular",
+        formSub: "Bitte füllen Sie Ihre Daten vollständig aus.",
+        lblFullName: "Vor- und Nachname *",
+        lblPhone: "Telefonnummer *",
+        lblCategory: "Fachbereich / Beschwerdebild",
+        opt1: "Ganzheitliche Erstuntersuchung",
+        opt2: "Morbus Bechterew & Rheuma",
+        opt3: "Wirbelsäulen-, Rücken- & Nackenschmerz",
+        opt4: "Fibromyalgie & Erschöpfung",
+        opt5: "Phytotherapie & Ernährungsmedizin",
+        opt6: "Osteopathie & Manuelle Therapie",
+        lblTime: "Wunschtermin / Zeitfenster",
+        lblNote: "Kurze Beschreibung Ihrer Beschwerden",
+        btnSendWaApp: "Terminanfrage per WhatsApp Senden ➔",
+        footerSub: "KLINIK FÜR GANZHEITLICHE MEDIZIN",
+        footerDesc: "Nachhaltige Heilungsansätze durch Ursachenforschung, funktionelle Medizin und maßgeschneiderte Behandlungskombinationen.",
+        fQuickLinks: "Schnellzugriff",
+        fAddressTitle: "Klinikadresse & Kontakt",
+        fPhoneInfo: "Termine & Information:",
+        btnDirections: "🗺️ Route auf Google Maps Planen",
+        rights: "Alle Rechte vorbehalten.",
+        waReplyTime: "Antwortet meistens innerhalb weniger Minuten",
+        waHint: "Senden Sie uns Ihre Terminanfrage, unsere Praxisassistenz meldet sich sofort bei Ihnen:",
+        waLblService: "Anliegen / Gewünschte Behandlung:",
+        waLblTime: "Verfügbarer Tag und Uhrzeit:",
+        btnWaSend: "💬 Anfrage per WhatsApp Senden",
+        orDivider: "ODER",
+        btnDirectCall: "📞 WhatsApp-Hotline Direkt Anrufen / Schreiben",
+        waTrigger: "WhatsApp Termin",
+        searchClose: "Schließen (ESC)",
+        searchSuggested: "Empfohlen:",
+        searchEmpty: "Suchbegriff oder Beschwerde oben eingeben..."
+      }
+    };
+
+    // DİL DEĞİŞTİRME MOTORU
+    function changeLanguage(lang) {
+      const selectedLang = translations[lang] ? lang : 'tr';
+      localStorage.setItem('drceyhun_lang', selectedLang);
+
+      // Metinleri güncelle
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (translations[selectedLang][key]) {
+          el.innerText = translations[selectedLang][key];
+        }
+      });
+
+      // Aktif buton stilini güncelle
+      document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.classList.remove('active');
+        if (btn.innerText.trim().toLowerCase() === selectedLang) {
+          btn.classList.add('active');
+        }
+      });
+
+      // HTML lang niteliğini güncelle
+      document.documentElement.lang = selectedLang;
+    }
+
+    // Sayfa Yüklendiğinde Kayıtlı Dili Uygula
+    document.addEventListener('DOMContentLoaded', () => {
+      const savedLang = localStorage.getItem('drceyhun_lang') || 'tr';
+      changeLanguage(savedLang);
+    });
+
+    // === 1. WhatsApp Randevu Pop-up ===
     const waTrigger = document.getElementById('waTrigger');
     const waBox = document.getElementById('waBox');
     const waCloseBtn = document.getElementById('waCloseBtn');
     const waForm = document.getElementById('waForm');
 
-    waTrigger.addEventListener('click', () => {
-      waBox.classList.toggle('active');
-    });
-
-    waCloseBtn.addEventListener('click', () => {
-      waBox.classList.remove('active');
-    });
+    waTrigger.addEventListener('click', () => waBox.classList.toggle('active'));
+    waCloseBtn.addEventListener('click', () => waBox.classList.remove('active'));
 
     waForm.addEventListener('submit', (e) => {
       e.preventDefault();
       const name = document.getElementById('waName').value.trim();
-      const service = document.getElementById('waService').value.trim() || 'Genel Muayene';
+      const service = document.getElementById('waService').value.trim() || 'Muayene';
       const time = document.getElementById('waTime').value.trim();
 
       const message = `Merhaba Dr. Ceyhun NURİ Kliniği, web sitenizden randevu talebinde bulunmak istiyorum.%0A%0A` +
                       `👤 *Ad Soyad:* ${name}%0A` +
                       `🩺 *Konu / Tedavi:* ${service}%0A` +
-                      `⏰ *Müsait Olduğum Saat:* ${time}%0A%0A` +
-                      `Randevu durumu ve detaylar hakkında bilgi alabilir miyim?`;
+                      `⏰ *Müsait Saat:* ${time}`;
 
       window.open(`https://wa.me/905431643264?text=${message}`, '_blank');
       waBox.classList.remove('active');
       waForm.reset();
     });
 
-    // 2. Mobil Hamburger Menü
+    // === 2. Mobil Hamburger Menü ===
     const mobileNavToggle = document.getElementById('mobileNavToggle');
     const navLinks = document.querySelector('.nav-links');
 
@@ -708,7 +1233,7 @@
       });
     }
 
-    // 3. Ana Randevu Formu (Sayfa İçi)
+    // === 3. Ana Randevu Formu ===
     const mainForm = document.getElementById('mainAppointmentForm');
     if (mainForm) {
       mainForm.addEventListener('submit', (e) => {
@@ -716,7 +1241,7 @@
         const name = document.getElementById('formName').value;
         const phone = document.getElementById('formPhone').value;
         const cat = document.getElementById('formCategory').value;
-        const date = document.getElementById('formDate').value || 'En erken müsait zaman';
+        const date = document.getElementById('formDate').value || 'En erken zaman';
         const note = document.getElementById('formNote').value || 'Belirtilmedi';
 
         const msg = `*Dr. Ceyhun NURİ Kliniği - Yeni Randevu Talebi*%0A%0A` +
@@ -731,64 +1256,16 @@
       });
     }
 
-    // 4. Genel Arama Motoru Veritabanı
+    // === 4. Genel Arama Motoru ===
     const siteData = [
-      {
-        title: "Bağırsak Geçirgenliğini Onaran Doğal Kür Protokolü",
-        category: "Bitkisel Kür & Fitoterapi",
-        type: "video",
-        keywords: "bağırsak mikrobiyota sibo geçirgen bağırsak fitoterapi kür tarif beslenme",
-        link: "#yazilar"
-      },
-      {
-        title: "Bel ve Boyun Fıtığında Evde Mekanik Egzersizler",
-        category: "Osteopati & Egzersiz",
-        type: "video",
-        keywords: "bel fıtığı boyun fıtığı omurga osteopati mekanik video egzersiz duruş",
-        link: "#yazilar"
-      },
-      {
-        title: "Fibromiyalji ve Kronik Yorgunluğun Kök Nedenleri",
-        category: "Bütüncül Tıp Makalesi",
-        type: "makale",
-        keywords: "fibromiyalji yorgunluk kas ağrısı mitokondri halsizlik tükenmişlik",
-        link: "#yazilar"
-      },
-      {
-        title: "Ankilozan Spondilitte Bütüncül Yaklaşım",
-        category: "Hastalık Rehberi",
-        type: "rehber",
-        keywords: "ankilozan spondilit omurga romatizma sabah tutukluğu eklem",
-        link: "#hastaliklar"
-      },
-      {
-        title: "Romatoid Artrit ve Enflamasyon Yönetimi",
-        category: "Hastalık Rehberi",
-        type: "rehber",
-        keywords: "romatoid artrit iltihaplı romatizma eklem şişliği ödem bağışıklık",
-        link: "#hastaliklar"
-      },
-      {
-        title: "Robotik Lazer ve Manyetik Alan Tedavisi",
-        category: "Klinik Tedavi",
-        type: "tedavi",
-        keywords: "robotik lazer kıkırdak menisküs manyetik alan doku yenilenmesi atp hücre",
-        link: "#tedaviler"
-      },
-      {
-        title: "Diyabet ve İnsülin Direncinde Beslenme",
-        category: "Hastalık & Beslenme",
-        type: "rehber",
-        keywords: "diyabet şeker insülin direnci kilo metabolizma ph diyeti",
-        link: "#hastaliklar"
-      },
-      {
-        title: "Ozon Tedavisi ve Hücresel Oksijenlenme",
-        category: "Klinik Tedavi",
-        type: "tedavi",
-        keywords: "ozon medikal ozon majör ozon bağışıklık detoks damar serum",
-        link: "#tedaviler"
-      }
+      { title: "Bağırsak Geçirgenliğini Onaran Doğal Kür Protokolü", category: "Bitkisel Kür & Fitoterapi", type: "video", keywords: "bağırsak mikrobiyota sibo geçirgen fitoterapi gut darm", link: "#yazilar" },
+      { title: "Bel ve Boyun Fıtığında Evde Mekanik Egzersizler", category: "Osteopati & Egzersiz", type: "video", keywords: "bel fıtığı boyun omurga osteopati spine rücken", link: "#yazilar" },
+      { title: "Fibromiyalji ve Kronik Yorgunluğun Kök Nedenleri", category: "Bütüncül Tıp Makalesi", type: "makale", keywords: "fibromiyalji yorgunluk fatigue müdigkeit ağrı", link: "#yazilar" },
+      { title: "Ankilozan Spondilitte Bütüncül Yaklaşım", category: "Hastalık Rehberi", type: "rehber", keywords: "ankilozan spondilit bechterew omurga romatizma", link: "#hastaliklar" },
+      { title: "Romatoid Artrit ve Enflamasyon Yönetimi", category: "Hastalık Rehberi", type: "rehber", keywords: "romatoid artrit arthritis romatizma iltihap", link: "#hastaliklar" },
+      { title: "Robotik Lazer ve Manyetik Alan Tedavisi", category: "Klinik Tedavi", type: "tedavi", keywords: "robotik lazer laser magnetic alan menisküs atp", link: "#tedaviler" },
+      { title: "Diyabet ve İnsülin Direncinde Beslenme", category: "Hastalık & Beslenme", type: "rehber", keywords: "diyabet diabetes şeker insülin beslenme", link: "#hastaliklar" },
+      { title: "Ozon Tedavisi ve Hücresel Oksijenlenme", category: "Klinik Tedavi", type: "tedavi", keywords: "ozon ozone medikal ozon oksijen bağışıklık", link: "#tedaviler" }
     ];
 
     function openSearchModal() {
@@ -821,13 +1298,7 @@
       const searchClearBtn = document.getElementById('searchClearBtn');
 
       if (searchCloseBtn) searchCloseBtn.addEventListener('click', closeSearch);
-      
-      if (searchOverlay) {
-        searchOverlay.addEventListener('click', (e) => {
-          if (e.target === searchOverlay) closeSearch();
-        });
-      }
-
+      if (searchOverlay) searchOverlay.addEventListener('click', (e) => { if (e.target === searchOverlay) closeSearch(); });
       if (searchClearBtn) {
         searchClearBtn.addEventListener('click', () => {
           if (siteSearchInput) {
@@ -837,17 +1308,12 @@
           }
         });
       }
-
       if (siteSearchInput) {
-        siteSearchInput.addEventListener('input', (e) => {
-          renderSearchResults(e.target.value.toLowerCase().trim());
-        });
+        siteSearchInput.addEventListener('input', (e) => renderSearchResults(e.target.value.toLowerCase().trim()));
       }
     });
 
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape') closeSearch();
-    });
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeSearch(); });
 
     window.quickSearch = function(query) {
       const siteSearchInput = document.getElementById('siteSearchInput');
@@ -877,16 +1343,13 @@
         searchResults.innerHTML = `
           <div class="search-empty-state">
             <p><strong>"${query}"</strong> ile ilgili eşleşen içerik bulunamadı.</p>
-            <span style="font-size:0.85rem;">Doğrudan bilgi almak için <a href="#waBox" onclick="closeSearch(); document.getElementById('waBox').classList.add('active');" style="color:var(--primary); font-weight:bold;">WhatsApp hattımıza</a> yazabilirsiniz.</span>
           </div>`;
         return;
       }
 
       searchResults.innerHTML = filtered.map(item => `
         <a href="${item.link}" class="search-result-item" onclick="closeSearch();">
-          <div class="res-icon-wrap">
-            ${item.type === 'video' ? '▶️' : item.type === 'rehber' ? '📖' : '🩺'}
-          </div>
+          <div class="res-icon-wrap">${item.type === 'video' ? '▶️' : item.type === 'rehber' ? '📖' : '🩺'}</div>
           <div class="res-details">
             <div class="res-cat">${item.category}</div>
             <div class="res-title">${item.title}</div>
